@@ -2,7 +2,7 @@
 
 class vistaModelo{
     protected static function obtener_vista($vista){
-       $palabras_permitidas =['usuario','producto','calzado'];
+       $palabras_permitidas =['usuario','calzado','producto','carrito','contacto','detalles_producto','electronica','mejoresmarcas','modahombre','index','perfil'];
        if (in_array($vista,$palabras_permitidas)){
             if(is_file("./views/".$vista.".php")){
                 $contenido = "./views/".$vista.".php";
