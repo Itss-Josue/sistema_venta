@@ -1,7 +1,7 @@
 <section style="background-color:white;">
         <div class="container py-5">
             <div class="row">
-                <div style="box-shadow: 3px 3px 20px 3px black; top: 20px;" class="col-lg-4">
+                <div  class="col-lg-4">
                     <div class="card mb-4">
                         <div style=" background-color: white;" class="card-body text-center">
                             <img src="https://i.pinimg.com/564x/78/4b/a3/784ba3fb679c5cd663c8d730da754247.jpg"
