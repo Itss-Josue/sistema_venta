@@ -12,7 +12,7 @@
 <body>
     <header>
         <div class="header-container">
-            <a href="<?php echo BASE_URL?>index">
+            <a href="<?php echo BASE_URL?>inicio">
                 <img src="./views/plantilla/img/logo.jpeg" class="logo" width="100">
             </a>
             <input type="text" placeholder="Busca tu producto" class="search-bar">
