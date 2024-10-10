@@ -8,7 +8,7 @@
                   <div class="row">
       
                     <div class="col-lg-7">
-                      <h5 class="mb-3"><a href="Inicio.html" class="text-body">Seguir comprando</a></h5>
+                      <h5 class="mb-3"><a href="<?php echo BASE_URL?>index" class="text-body">Seguir comprando</a></h5>
                       <hr>
       
                       <div class="d-flex justify-content-between align-items-center mb-4">

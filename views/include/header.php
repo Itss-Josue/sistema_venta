@@ -22,7 +22,7 @@
                 <a href="<?php echo BASE_URL?>perfil" class="a" style="text-decoration: none;">
                     <span>¡Hola, Josue!</span>
                 </a>
-                <a href="carrito.html">
+                <a href="<?php echo BASE_URL?>carrito">
                     <img src="./views/plantilla/img/carr.jpeg" alt="Perú" class="flag" width="60" height="50">
                 </a>
 
