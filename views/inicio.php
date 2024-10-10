@@ -55,7 +55,7 @@
                 </div>
                 <br>
                 <div class="text-center">
-                    <a href="<?php echo BASE_URL ?>detalles_producto" class="btn btn-primary">Detalles</a>
+                    <a href="<?php echo BASE_URL ?>detalles-producto" class="btn btn-primary">Detalles</a>
                     <a href="<?php echo BASE_URL ?>carrito" class="btn btn-light">Añadir al carrito</a>
                 </div>
             </div>
@@ -76,7 +76,7 @@
                 </div>
                 <br>
                 <div class="text-center">
-                    <a href="<?php echo BASE_URL ?>detalles_producto" class="btn btn-primary">Detalles</a>
+                    <a href="<?php echo BASE_URL ?>detalles-producto" class="btn btn-primary">Detalles</a>
                     <a href="<?php echo BASE_URL ?>carrito" class="btn btn-light">Añadir al carrito</a>
                 </div>
             </div>
@@ -98,7 +98,7 @@
                 </div>
                 <br>
                 <div class="text-center">
-                    <a href="<?php echo BASE_URL ?>detalles_producto" class="btn btn-primary">Detalles</a>
+                    <a href="<?php echo BASE_URL ?>detalles-producto" class="btn btn-primary">Detalles</a>
                     <a href="<?php echo BASE_URL ?>carrito" class="btn btn-light">Añadir al carrito</a>
                 </div>
             </div>
@@ -120,7 +120,7 @@
                 </div>
                 <br>
                 <div class="text-center">
-                    <a href="<?php echo BASE_URL ?>detalles_producto" class="btn btn-primary">Detalles</a>
+                    <a href="<?php echo BASE_URL ?>detalles-producto" class="btn btn-primary">Detalles</a>
                     <a href="<?php echo BASE_URL ?>carrito" class="btn btn-light">Añadir al carrito</a>
                 </div>
             </div>
@@ -142,7 +142,7 @@
                 </div>
                 <br>
                 <div class="text-center">
-                    <a href="<?php echo BASE_URL ?>detalles_producto" class="btn btn-primary">Detalles</a>
+                    <a href="<?php echo BASE_URL ?>detalles-producto" class="btn btn-primary">Detalles</a>
                     <a href="<?php echo BASE_URL ?>carrito" class="btn btn-light">Añadir al carrito</a>
                 </div>
             </div>
@@ -163,7 +163,7 @@
                 </div>
                 <br>
                 <div class="text-center">
-                    <a href="<?php echo BASE_URL ?>detalles_producto" class="btn btn-primary">Detalles</a>
+                    <a href="<?php echo BASE_URL ?>detalles-producto" class="btn btn-primary">Detalles</a>
                     <a href="<?php echo BASE_URL ?>carrito" class="btn btn-light">Añadir al carrito</a>
                 </div>
             </div>
@@ -189,7 +189,7 @@
             </div>
             <br>
             <div class="text-center">
-                <a href="<?php echo BASE_URL ?>detalles_producto" class="btn btn-primary">Detalles</a>
+                <a href="<?php echo BASE_URL ?>detalles-producto" class="btn btn-primary">Detalles</a>
                 <a href="<?php echo BASE_URL ?>carrito" class="btn btn-light">Añadir al carrito</a>
             </div>
         </div>
@@ -210,7 +210,7 @@
             </div>
             <br>
             <div class="text-center">
-                <a href="<?php echo BASE_URL ?>detalles_producto" class="btn btn-primary">Detalles</a>
+                <a href="<?php echo BASE_URL ?>detalles-producto" class="btn btn-primary">Detalles</a>
                 <a href="<?php echo BASE_URL ?>carrito" class="btn btn-light">Añadir al carrito</a>
             </div>
         </div>
@@ -232,7 +232,7 @@
             </div>
             <br>
             <div class="text-center">
-                <a href="<?php echo BASE_URL ?>detalles_producto" class="btn btn-primary">Detalles</a>
+                <a href="<?php echo BASE_URL ?>detalles-producto" class="btn btn-primary">Detalles</a>
                 <a href="<?php echo BASE_URL ?>carrito" class="btn btn-light">Añadir al carrito</a>
             </div>
         </div>
@@ -254,7 +254,7 @@
             </div>
             <br>
             <div class="text-center">
-                <a href="<?php echo BASE_URL ?>detalles_producto" class="btn btn-primary">Detalles</a>
+                <a href="<?php echo BASE_URL ?>detalles-producto" class="btn btn-primary">Detalles</a>
                 <a href="<?php echo BASE_URL ?>carrito" class="btn btn-light">Añadir al carrito</a>
             </div>
         </div>
@@ -276,7 +276,7 @@
             </div>
             <br>
             <div class="text-center">
-                <a href="<?php echo BASE_URL ?>detalles_producto" class="btn btn-primary">Detalles</a>
+                <a href="<?php echo BASE_URL ?>detalles-producto" class="btn btn-primary">Detalles</a>
                 <a href="<?php echo BASE_URL ?>carrito" class="btn btn-light">Añadir al carrito</a>
             </div>
         </div>
@@ -297,7 +297,7 @@
             </div>
             <br>
             <div class="text-center">
-                <a href="<?php echo BASE_URL ?>detalles_producto" class="btn btn-primary">Detalles</a>
+                <a href="<?php echo BASE_URL ?>detalles-producto" class="btn btn-primary">Detalles</a>
                 <a href="<?php echo BASE_URL ?>carrito" class="btn btn-light">Añadir al carrito</a>
             </div>
         </div>
