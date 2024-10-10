@@ -6,7 +6,7 @@ require_once "./controller/vistas_control.php";
 
 $mostrar = new vistasControlador();
 $vista = $mostrar->obtenerVistaControlador();
-if($vista=="login" || $vista=="perfil" || $vista == "404" ){
+if($vista=="login" || $vista=="perfil" || $vista == "404" || $vista == "contacto" ){
     require_once "./views/".$vista.".php";
     }else{
         include "./views/include/header.php";

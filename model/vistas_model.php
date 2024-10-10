@@ -18,6 +18,8 @@ class vistaModelo{
         $contenido = "login";
      }elseif($vista=="perfil" ){
         $contenido = "perfil";
+    }elseif($vista=="contacto" ){
+        $contenido = "contacto";
 
        }else{
          $contenido = "404";
