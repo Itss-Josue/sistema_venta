@@ -55,7 +55,7 @@
                 </div>
                 <br>
                 <div class="text-center">
-                    <a href="detalles_producto.html" class="btn btn-primary">Detalles</a>
+                    <a href="<?php echo BASE_URL ?>detalles_producto" class="btn btn-primary">Detalles</a>
                     <a href="carrito.html" class="btn btn-light">Añadir al carrito</a>
                 </div>
             </div>

@@ -13,7 +13,7 @@
                   </div>
                 </div>
                 <div class="text-center">
-                    <a href="detalles_producto.html" class="btn btn-primary">Comprar</a>
+                    <a href="<?php echo BASE_URL ?>carrito" class="btn btn-primary">Comprar</a>
                 </div>
               </div>
           
@@ -29,7 +29,7 @@
                   </div>
                 </div>
                 <div class="text-center">
-                    <a href="detalles_producto.html" class="btn btn-primary">Comprar</a>
+                    <a href="<?php echo BASE_URL ?>carrito" class="btn btn-primary">Comprar</a>
                 </div>
               </div>
           
@@ -45,7 +45,7 @@
                   </div>
                 </div>
                 <div class="text-center">
-                    <a href="detalles_producto.html" class="btn btn-primary">Comprar</a>
+                    <a href="<?php echo BASE_URL ?>carrito" class="btn btn-primary">Comprar</a>
                 </div>
               </div>
               
@@ -61,7 +61,7 @@
                   </div>
                 </div>
                 <div class="text-center">
-                    <a href="detalles_producto.html" class="btn btn-primary">Comprar</a>
+                    <a href="<?php echo BASE_URL ?>carrito" class="btn btn-primary">Comprar</a>
                 </div>
               </div>
           
@@ -77,7 +77,7 @@
                   </div>
                 </div>
                 <div class="text-center">
-                    <a href="detalles_producto.html" class="btn btn-primary">Comprar</a>
+                    <a href="<?php echo BASE_URL ?>carrito" class="btn btn-primary">Comprar</a>
                 </div>
               </div>
               <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
@@ -92,7 +92,7 @@
                   </div>
                 </div>
                 <div class="text-center">
-                    <a href="detalles_producto.html" class="btn btn-primary">Comprar</a>
+                    <a href="<?php echo BASE_URL ?>carrito" class="btn btn-primary">Comprar</a>
                 </div>
               </div>
             </div>
@@ -111,7 +111,7 @@
                   </div>
                 </div>
                 <div class="text-center">
-                    <a href="detalles_producto.html" class="btn btn-primary">Comprar</a>
+                    <a href="<?php echo BASE_URL ?>carrito" class="btn btn-primary">Comprar</a>
                 </div>
               </div>
           
@@ -127,7 +127,7 @@
                   </div>
                 </div>
                 <div class="text-center">
-                    <a href="detalles_producto.html" class="btn btn-primary">Comprar</a>
+                    <a href="<?php echo BASE_URL ?>carrito" class="btn btn-primary">Comprar</a>
                 </div>
               </div>
           
@@ -143,7 +143,7 @@
                   </div>
                 </div>
                 <div class="text-center">
-                    <a href="detalles_producto.html" class="btn btn-primary">Comprar</a>
+                    <a href="<?php echo BASE_URL ?>carrito" class="btn btn-primary">Comprar</a>
                 </div>
               </div>
               
@@ -159,7 +159,7 @@
                   </div>
                 </div>
                 <div class="text-center">
-                    <a href="detalles_producto.html" class="btn btn-primary">Comprar</a>
+                    <a href="<?php echo BASE_URL ?>carrito" class="btn btn-primary">Comprar</a>
                 </div>
               </div>
           
@@ -175,7 +175,7 @@
                   </div>
                 </div>
                 <div class="text-center">
-                    <a href="detalles_producto.html" class="btn btn-primary">Comprar</a>
+                    <a href="<?php echo BASE_URL ?>carrito" class="btn btn-primary">Comprar</a>
                 </div>
               </div>
               <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
@@ -190,214 +190,9 @@
                   </div>
                 </div>
                 <div class="text-center">
-                    <a href="detalles_producto.html" class="btn btn-primary">Comprar</a>
+                    <a href="<?php echo BASE_URL ?>carrito" class="btn btn-primary">Comprar</a>
                 </div>
               </div>
             </div>
           </div>
-          
-        <br>
-        <br>
-        <br>
-        <br>
-        <div class="container">
-            <div class="row">
-              <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-                <div class="card" style="background-color:white; border: 0;">
-                  <img style="width: 80%; border-radius: 25px; margin-left: 15%;"
-                       src="https://d3fvqmu2193zmz.cloudfront.net/items_2/uid_commerces.1/uid_items_2.FDLFAI2P42XW/500x500/65F9CEDA55307-Zapatilla-Botin-Outdoor-Hombre-Kd22-10m.webp"
-                       class="card-img-top" alt="...">
-                  <div class="dest" style="margin-left: 25%;">
-                    <span class="fs-2">PEN 118.20</span>
-                    <span class="text-decoration-line-through">PEN 168.20 </span>
-                    <h5 style="color: red; margin-left: 20%;"> -20% dto</h5>
-                  </div>
-                </div>
-                <div class="text-center">
-                    <a href="detalles_producto.html" class="btn btn-primary">Comprar</a>
-                </div>
-              </div>
-          
-              <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-                <div class="card" style="background-color: white; border: 0;">
-                  <img style="width: 80%; border-radius: 25px; margin-left: 15%;"
-                       src="https://d3fvqmu2193zmz.cloudfront.net/items_2/uid_commerces.1/uid_items_2.FDLF1K8FXY5O/500x500/65F0DAD943799-Polo-Urbano-Manga-Corta-Hombre-Xsens.webp"
-                       class="card-img-top" alt="...">
-                  <div class="dest" style="margin-left: 25%;">
-                    <span class="fs-2">PEN 28.20</span>
-                    <span class="text-decoration-line-through">PEN 58.20 </span>
-                    <h5 style="color: red; margin-left: 20%;"> -20% dto</h5>
-                  </div>
-                </div>
-                <div class="text-center">
-                    <a href="detalles_producto.html" class="btn btn-primary">Comprar</a>
-                </div>
-              </div>
-          
-              <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-                <div class="card" style="background-color:white; border: 0;">
-                  <img style="width: 80%; border-radius: 25px; margin-left: 15%;"
-                       src="https://d3fvqmu2193zmz.cloudfront.net/items_2/uid_commerces.1/uid_items_2.FDLF1K8FXY00/500x500/65F0DC73C992D-Polo-Urbano-Manga-Corta-Hombre-Yinya.webp"
-                       class="card-img-top" alt="...">
-                  <div class="dest" style="margin-left: 25%;">
-                    <span class="fs-2">PEN 58.20</span>
-                    <span class="text-decoration-line-through">PEN 78.20 </span>
-                    <h5 style="color: red; margin-left: 20%;"> -20% dto</h5>
-                  </div>
-                </div>
-                <div class="text-center">
-                    <a href="detalles_producto.html" class="btn btn-primary">Comprar</a>
-                </div>
-              </div>
-              
-              <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-                <div class="card" style="background-color:white; border: 0;">
-                  <img style="width: 80%; border-radius: 25px; margin-left: 15%;"
-                       src="https://d3fvqmu2193zmz.cloudfront.net/items_2/uid_commerces.1/uid_items_2.FDLF1K8FXY8O/500x500/65F0D9577067C-Polo-Urbano-Manga-Corta-Hombre-Poke.webp"
-                       class="card-img-top" alt="...">
-                  <div class="dest" style="margin-left: 25%;">
-                    <span class="fs-2">PEN 5.45</span>
-                    <span class="text-decoration-line-through">PEN 23.20 </span>
-                    <h5 style="color: red; margin-left: 20%;"> -20% dto</h5>
-                  </div>
-                </div>
-                <div class="text-center">
-                    <a href="detalles_producto.html" class="btn btn-primary">Comprar</a>
-                </div>
-              </div>
-          
-              <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-                <div class="card" style="background-color: white; border: 0;">
-                  <img style="width: 80%; border-radius: 25px; margin-left: 15%;"
-                       src="https://d3fvqmu2193zmz.cloudfront.net/items_2/uid_commerces.1/uid_items_2.FDLF1K8FXY6O/500x500/65F0D9F636C58-Polo-Urbano-Manga-Corta-Hombre-Rial.webp"
-                       class="card-img-top" alt="...">
-                  <div class="dest" style="margin-left: 25%;">
-                    <span class="fs-2">PEN 3.87</span>
-                    <span class="text-decoration-line-through">PEN 34.20 </span>
-                    <h5 style="color: red; margin-left: 20%;"> -20% dto</h5>
-                  </div>
-                </div>
-                <div class="text-center">
-                    <a href="detalles_producto.html" class="btn btn-primary">Comprar</a>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-                <div class="card" style="background-color: white; border: 0;">
-                  <img style="width: 80%; border-radius: 25px; margin-left: 15%;"
-                       src="https://d3fvqmu2193zmz.cloudfront.net/items_2/uid_commerces.1/uid_items_2.FD2MPPLRJ2G4/500x500/65D35725B685A-Pant--Cab--1551-Reserva.webp"
-                       class="card-img-top" alt="...">
-                  <div class="dest" style="margin-left: 25%;">
-                    <span class="fs-2">PEN 3.87</span>
-                    <span class="text-decoration-line-through">PEN 34.20 </span>
-                    <h5 style="color: red; margin-left: 20%;"> -20% dto</h5>
-                  </div>
-                </div>
-                <div class="text-center">
-                    <a href="detalles_producto.html" class="btn btn-primary">Comprar</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-        <br>
-        <br>
-        <br>
-        <div class="container">
-            <div class="row">
-              <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-                <div class="card" style="background-color:white; border: 0;">
-                  <img style="width: 80%; border-radius: 25px; margin-left: 15%;"
-                       src="https://d3fvqmu2193zmz.cloudfront.net/items_2/uid_commerces.1/uid_items_2.FD2MPPLRJ2EY/500x500/63AD9C6F7E469.webp"
-                       class="card-img-top" alt="...">
-                  <div class="dest" style="margin-left: 25%;">
-                    <span class="fs-2">PEN 118.20</span>
-                    <span class="text-decoration-line-through">PEN 168.20 </span>
-                    <h5 style="color: red; margin-left: 20%;"> -20% dto</h5>
-                  </div>
-                </div>
-                <div class="text-center">
-                    <a href="detalles_producto.html" class="btn btn-primary">Comprar</a>
-                </div>
-              </div>
-          
-              <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-                <div class="card" style="background-color: white; border: 0;">
-                  <img style="width: 80%; border-radius: 25px; margin-left: 15%;"
-                       src="https://d3fvqmu2193zmz.cloudfront.net/items_2/uid_commerces.1/uid_items_2.FDBVQLVOXGSI/500x500/6499F3383D112-Pantalon-Jean-Hombre-K02096-Skinny.webp"
-                       class="card-img-top" alt="...">
-                  <div class="dest" style="margin-left: 25%;">
-                    <span class="fs-2">PEN 28.20</span>
-                    <span class="text-decoration-line-through">PEN 58.20 </span>
-                    <h5 style="color: red; margin-left: 20%;"> -20% dto</h5>
-                  </div>
-                </div>
-                <div class="text-center">
-                    <a href="detalles_producto.html" class="btn btn-primary">Comprar</a>
-                </div>
-              </div>
-          
-              <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-                <div class="card" style="background-color:white; border: 0;">
-                  <img style="width: 80%; border-radius: 25px; margin-left: 15%;"
-                       src="https://d3fvqmu2193zmz.cloudfront.net/ProductCatalog/Workspace.CWDQQL6GUIJMS/ProductCatalog.CWT7B35BGGXE6/500x500/CWX4HXB67YTSA.webp"
-                       class="card-img-top" alt="...">
-                  <div class="dest" style="margin-left: 25%;">
-                    <span class="fs-2">PEN 58.20</span>
-                    <span class="text-decoration-line-through">PEN 78.20 </span>
-                    <h5 style="color: red; margin-left: 20%;"> -20% dto</h5>
-                  </div>
-                </div>
-                <div class="text-center">
-                    <a href="detalles_producto.html" class="btn btn-primary">Comprar</a>
-                </div>
-              </div>
-              
-              <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-                <div class="card" style="background-color:white; border: 0;">
-                  <img style="width: 80%; border-radius: 25px; margin-left: 15%;"
-                       src="https://d3fvqmu2193zmz.cloudfront.net/ProductCatalog/Workspace.CWDQQL6GUIJMS/ProductCatalog.CWT7ATSDHOHVG/500x500/CWZTQ2P2AYKZE.webp"
-                       class="card-img-top" alt="...">
-                  <div class="dest" style="margin-left: 25%;">
-                    <span class="fs-2">PEN 5.45</span>
-                    <span class="text-decoration-line-through">PEN 23.20 </span>
-                    <h5 style="color: red; margin-left: 20%;"> -20% dto</h5>
-                  </div>
-                </div>
-                <div class="text-center">
-                    <a href="detalles_producto.html" class="btn btn-primary">Comprar</a>
-                </div>
-              </div>
-          
-              <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-                <div class="card" style="background-color: white; border: 0;">
-                  <img style="width: 80%; border-radius: 25px; margin-left: 15%;"
-                       src="https://d3fvqmu2193zmz.cloudfront.net/ProductCatalog/Workspace.CWDQQL6GUIJMS/ProductCatalog.CXMLEDXE4X5NO/500x500/CXO6VE72SPMZY.webp"
-                       class="card-img-top" alt="...">
-                  <div class="dest" style="margin-left: 25%;">
-                    <span class="fs-2">PEN 3.87</span>
-                    <span class="text-decoration-line-through">PEN 34.20 </span>
-                    <h5 style="color: red; margin-left: 20%;"> -20% dto</h5>
-                  </div>
-                </div>
-                <div class="text-center">
-                    <a href="detalles_producto.html" class="btn btn-primary">Comprar</a>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-                <div class="card" style="background-color: white; border: 0;">
-                  <img style="width: 80%; border-radius: 25px; margin-left: 15%;"
-                       src="https://d3fvqmu2193zmz.cloudfront.net/ProductCatalog/Workspace.CWDQQL6GUIJMS/ProductCatalog.CWT7C3OUDXLOK/500x500/CYXIRGOLDZKYE.webp"
-                       class="card-img-top" alt="...">
-                  <div class="dest" style="margin-left: 25%;">
-                    <span class="fs-2">PEN 3.87</span>
-                    <span class="text-decoration-line-through">PEN 34.20 </span>
-                    <h5 style="color: red; margin-left: 20%;"> -20% dto</h5>
-                  </div>
-                </div>
-                <div class="text-center">
-                    <a href="detalles_producto.html" class="btn btn-primary">Comprar</a>
-                </div>
-              </div>
-            </div>
-          </div>    
     </div> 

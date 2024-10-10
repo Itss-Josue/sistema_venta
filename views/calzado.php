@@ -13,7 +13,7 @@
             </div>
           </div>
           <div class="text-center">
-            <a href="detalles_producto.html" class="btn btn-primary">Comprar</a>
+            <a href="<?php echo BASE_URL ?>carrito" class="btn btn-primary">Comprar</a>
           </div>
         </div>
 
@@ -29,7 +29,7 @@
             </div>
           </div>
           <div class="text-center">
-            <a href="detalles_producto.html" class="btn btn-primary">Comprar</a>
+            <a href="<?php echo BASE_URL ?>carrito" class="btn btn-primary">Comprar</a>
           </div>
         </div>
 
@@ -45,7 +45,7 @@
             </div>
           </div>
           <div class="text-center">
-            <a href="detalles_producto.html" class="btn btn-primary">Comprar</a>
+            <a href="<?php echo BASE_URL ?>carrito" class="btn btn-primary">Comprar</a>
           </div>
         </div>
 
@@ -61,7 +61,7 @@
             </div>
           </div>
           <div class="text-center">
-            <a href="detalles_producto.html" class="btn btn-primary">Comprar</a>
+            <a href="<?php echo BASE_URL ?>carrito" class="btn btn-primary">Comprar</a>
           </div>
         </div>
 
@@ -77,7 +77,7 @@
             </div>
           </div>
           <div class="text-center">
-            <a href="detalles_producto.html" class="btn btn-primary">Comprar</a>
+            <a href="<?php echo BASE_URL ?>carrito" class="btn btn-primary">Comprar</a>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
@@ -92,7 +92,7 @@
             </div>
           </div>
           <div class="text-center">
-            <a href="detalles_producto.html" class="btn btn-primary">Comprar</a>
+            <a href="<?php echo BASE_URL ?>carrito" class="btn btn-primary">Comprar</a>
           </div>
         </div>
       </div>
@@ -111,7 +111,7 @@
             </div>
           </div>
           <div class="text-center">
-            <a href="detalles_producto.html" class="btn btn-primary">Comprar</a>
+            <a href="<?php echo BASE_URL ?>carrito" class="btn btn-primary">Comprar</a>
           </div>
         </div>
 
@@ -127,7 +127,7 @@
             </div>
           </div>
           <div class="text-center">
-            <a href="detalles_producto.html" class="btn btn-primary">Comprar</a>
+            <a href="<?php echo BASE_URL ?>carrito" class="btn btn-primary">Comprar</a>
           </div>
         </div>
 
@@ -143,7 +143,7 @@
             </div>
           </div>
           <div class="text-center">
-            <a href="detalles_producto.html" class="btn btn-primary">Comprar</a>
+            <a href="<?php echo BASE_URL ?>carrito" class="btn btn-primary">Comprar</a>
           </div>
         </div>
 
@@ -159,7 +159,7 @@
             </div>
           </div>
           <div class="text-center">
-            <a href="detalles_producto.html" class="btn btn-primary">Comprar</a>
+            <a href="<?php echo BASE_URL ?>carrito" class="btn btn-primary">Comprar</a>
           </div>
         </div>
 
@@ -175,7 +175,7 @@
             </div>
           </div>
           <div class="text-center">
-            <a href="detalles_producto.html" class="btn btn-primary">Comprar</a>
+            <a href="<?php echo BASE_URL ?>carrito" class="btn btn-primary">Comprar</a>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
@@ -190,111 +190,9 @@
             </div>
           </div>
           <div class="text-center">
-            <a href="detalles_producto.html" class="btn btn-primary">Comprar</a>
+            <a href="<?php echo BASE_URL ?>carrito" class="btn btn-primary">Comprar</a>
           </div>
         </div>
       </div>
     </div>
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-          <div class="card" style="background-color:white; border: 0;">
-            <img style="width: 80%; border-radius: 25px; margin-left: 15%;"
-              src="https://d3fvqmu2193zmz.cloudfront.net/items_2/uid_commerces.1/uid_items_2.FDLBN44L7RMI/500x500/65CB7C39F188D-Zapatilla-Running-Hombre-Revolution-7.webp"
-              class="card-img-top" alt="...">
-            <div class="dest" style="margin-left: 25%;">
-              <span class="fs-2">PEN 198.20</span>
-              <span class="text-decoration-line-through">PEN 268.20 </span>
-              <h5 style="color: red; margin-left: 20%;"> -20% dto</h5>
-            </div>
-          </div>
-          <div class="text-center">
-            <a href="detalles_producto.html" class="btn btn-primary">Comprar</a>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-          <div class="card" style="background-color: white; border: 0;">
-            <img style="width: 80%; border-radius: 25px; margin-left: 15%;"
-              src="https://d3fvqmu2193zmz.cloudfront.net/items_2/uid_commerces.1/uid_items_2.FDLQA22Q7UQE/500x500/667AE541B4C7D-Zapatilla-Futbol-Hombre-Zoom-Vapor-15-Academy-Tf.webp"
-              class="card-img-top" alt="...">
-            <div class="dest" style="margin-left: 25%;">
-              <span class="fs-2">PEN 128.20</span>
-              <span class="text-decoration-line-through">PEN 198.20 </span>
-              <h5 style="color: red; margin-left: 20%;"> -20% dto</h5>
-            </div>
-          </div>
-          <div class="text-center">
-            <a href="detalles_producto.html" class="btn btn-primary">Comprar</a>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-          <div class="card" style="background-color:white; border: 0;">
-            <img style="width: 80%; border-radius: 25px; margin-left: 15%;"
-              src="https://d3fvqmu2193zmz.cloudfront.net/items_2/uid_commerces.1/uid_items_2.FDLQA22Q7URB/500x500/667AE7CE5F9C1-Zapatilla-Running-Hombre-Interact-Run.webp"
-              class="card-img-top" alt="...">
-            <div class="dest" style="margin-left: 25%;">
-              <span class="fs-2">PEN 178.20</span>
-              <span class="text-decoration-line-through">PEN 288.20 </span>
-              <h5 style="color: red; margin-left: 20%;"> -20% dto</h5>
-            </div>
-          </div>
-          <div class="text-center">
-            <a href="detalles_producto.html" class="btn btn-primary">Comprar</a>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-          <div class="card" style="background-color:white; border: 0;">
-            <img style="width: 80%; border-radius: 25px; margin-left: 15%;"
-              src="https://d3fvqmu2193zmz.cloudfront.net/items_2/uid_commerces.1/uid_items_2.FDLF81LYYH8H/500x500/65F2FEBBF0F91-Zapatilla-Training-Hombre-Air-Max-Alpha-Trainer-5.webp"
-              class="card-img-top" alt="...">
-            <div class="dest" style="margin-left: 25%;">
-              <span class="fs-2">PEN 105.45</span>
-              <span class="text-decoration-line-through">PEN 169.20 </span>
-              <h5 style="color: red; margin-left: 20%;"> -20% dto</h5>
-            </div>
-          </div>
-          <div class="text-center">
-            <a href="detalles_producto.html" class="btn btn-primary">Comprar</a>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-          <div class="card" style="background-color: white; border: 0;">
-            <img style="width: 80%; border-radius: 25px; margin-left: 15%;"
-              src="https://d3fvqmu2193zmz.cloudfront.net/items_2/uid_commerces.1/uid_items_2.FDL8B5GBM019/500x500/65B7DCE6A052E-Zapatilla-Running-Hombre-Revolution-7-4e.webp"
-              class="card-img-top" alt="...">
-            <div class="dest" style="margin-left: 25%;">
-              <span class="fs-2">PEN 183.87</span>
-              <span class="text-decoration-line-through">PEN 234.20 </span>
-              <h5 style="color: red; margin-left: 20%;"> -20% dto</h5>
-            </div>
-          </div>
-          <div class="text-center">
-            <a href="detalles_producto.html" class="btn btn-primary">Comprar</a>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-          <div class="card" style="background-color: white; border: 0;">
-            <img style="width: 80%; border-radius: 25px; margin-left: 15%;"
-              src="https://d3fvqmu2193zmz.cloudfront.net/items_2/uid_commerces.1/uid_items_2.FDLF81LYYH3L/500x500/65F2FF3073BC0-Zapatilla-Basquet-Hombre-Giannis-Immortality-3.webp"
-              class="card-img-top" alt="...">
-            <div class="dest" style="margin-left: 25%;">
-              <span class="fs-2">PEN 163.87</span>
-              <span class="text-decoration-line-through">PEN 276.20 </span>
-              <h5 style="color: red; margin-left: 20%;"> -20% dto</h5>
-            </div>
-          </div>
-          <div class="text-center">
-            <a href="detalles_producto.html" class="btn btn-primary">Comprar</a>
-          </div>
-        </div>
-      </div>
-    </div>
+    </div> 

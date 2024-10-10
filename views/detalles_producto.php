@@ -75,8 +75,8 @@
                     <span>Lleve hasta 500 zapatillas</span>
                 </div>
                 <div class="d-grid gap-2">
-                    <a href="Inicio.html" class="btn btn-danger">Comprar</a>
-                    <a href="carrito.html" class="btn btn-light">Añadir al carrito</a>
+                    <a href="<?php echo BASE_URL ?>producto" class="btn btn-danger">Comprar</a>
+                    <a href="<?php echo BASE_URL ?>carrito" class="btn btn-light">Añadir al carrito</a>
                 </div>
             </div>
             <div id="accordionExample" class="accordion col-12 p-2 mb-2">
@@ -116,7 +116,7 @@
                                 <h5 style="color: red; margin-left: 20%;"> -20% dto</h5>
                             </div>
                             <div class="text-center">
-                                <a href="detalles_producto.html" class="btn btn-primary">Comprar</a>
+                                <a href="<?php echo BASE_URL ?>detalles_producto" class="btn btn-primary">Comprar</a>
                             </div>
                         </div>
                     </div>
@@ -132,7 +132,7 @@
                                 <h5 style="color: red; margin-left: 20%;"> -20% dto</h5>
                             </div>
                             <div class="text-center">
-                                <a href="detalles_producto.html" class="btn btn-primary">Comprar</a>
+                                <a href="<?php echo BASE_URL ?>detalles_producto" class="btn btn-primary">Comprar</a>
                             </div>
                         </div>
                     </div>
@@ -148,7 +148,7 @@
                                 <h5 style="color: red; margin-left: 20%;"> -20% dto</h5>
                             </div>
                             <div class="text-center">
-                                <a href="detalles_producto.html" class="btn btn-primary">Comprar</a>
+                                <a href="<?php echo BASE_URL ?>detalles_producto" class="btn btn-primary">Comprar</a>
                             </div>
                         </div>
                     </div>
@@ -164,7 +164,7 @@
                                 <h5 style="color: red; margin-left: 20%;"> -20% dto</h5>
                             </div>
                             <div class="text-center">
-                                <a href="detalles_producto.html" class="btn btn-primary">Comprar</a>
+                                <a href="<?php echo BASE_URL ?>detalles_producto" class="btn btn-primary">Comprar</a>
                             </div>
                         </div>
                     </div>
@@ -180,7 +180,7 @@
                                 <h5 style="color: red; margin-left: 20%;"> -20% dto</h5>
                             </div>
                             <div class="text-center">
-                                <a href="detalles_producto.html" class="btn btn-primary">Comprar</a>
+                                <a href="<?php echo BASE_URL ?>detalles_producto" class="btn btn-primary">Comprar</a>
                             </div>
                         </div>
                     </div>
@@ -203,7 +203,7 @@
                                 <h5 style="color: red; margin-left: 20%;"> -20% dto</h5>
                             </div>
                             <div class="text-center">
-                                <a href="detalles_producto.html" class="btn btn-primary">Comprar</a>
+                                <a href="<?php echo BASE_URL ?>detalles_producto" class="btn btn-primary">Comprar</a>
                             </div>
                         </div>
                     </div>
@@ -219,7 +219,7 @@
                                 <h5 style="color: red; margin-left: 20%;"> -20% dto</h5>
                             </div>
                             <div class="text-center">
-                                <a href="detalles_producto.html" class="btn btn-primary">Comprar</a>
+                                <a href="<?php echo BASE_URL ?>detalles_producto" class="btn btn-primary">Comprar</a>
                             </div>
                         </div>
                     </div>
@@ -235,7 +235,7 @@
                                 <h5 style="color: red; margin-left: 20%;"> -20% dto</h5>
                             </div>
                             <div class="text-center">
-                                <a href="detalles_producto.html" class="btn btn-primary">Comprar</a>
+                                <a href="<?php echo BASE_URL ?>detalles_producto" class="btn btn-primary">Comprar</a>
                             </div>
                         </div>
                     </div>
@@ -251,7 +251,7 @@
                                 <h5 style="color: red; margin-left: 20%;"> -20% dto</h5>
                             </div>
                             <div class="text-center">
-                                <a href="detalles_producto.html" class="btn btn-primary">Comprar</a>
+                                <a href="<?php echo BASE_URL ?>detalles_producto" class="btn btn-primary">Comprar</a>
                             </div>
                         </div>
                     </div>
@@ -267,7 +267,7 @@
                                 <h5 style="color: red; margin-left: 20%;"> -20% dto</h5>
                             </div>
                             <div class="text-center">
-                                <a href="detalles_producto.html" class="btn btn-primary">Comprar</a>
+                                <a href="<?php echo BASE_URL ?>detalles_producto" class="btn btn-primary">Comprar</a>
                             </div>
                         </div>
                     </div>
