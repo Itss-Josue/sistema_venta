@@ -56,7 +56,7 @@
                 <br>
                 <div class="text-center">
                     <a href="<?php echo BASE_URL ?>detalles_producto" class="btn btn-primary">Detalles</a>
-                    <a href="carrito.html" class="btn btn-light">Añadir al carrito</a>
+                    <a href="<?php echo BASE_URL ?>carrito" class="btn btn-light">Añadir al carrito</a>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
@@ -76,8 +76,8 @@
                 </div>
                 <br>
                 <div class="text-center">
-                    <a href="detalles_producto.html" class="btn btn-primary">Detalles</a>
-                    <a href="carrito.html" class="btn btn-light">Añadir al carrito</a>
+                    <a href="<?php echo BASE_URL ?>detalles_producto" class="btn btn-primary">Detalles</a>
+                    <a href="<?php echo BASE_URL ?>carrito" class="btn btn-light">Añadir al carrito</a>
                 </div>
             </div>
 
@@ -98,8 +98,8 @@
                 </div>
                 <br>
                 <div class="text-center">
-                    <a href="detalles_producto.html" class="btn btn-primary">Detalles</a>
-                    <a href="carrito.html" class="btn btn-light">Añadir al carrito</a>
+                    <a href="<?php echo BASE_URL ?>detalles_producto" class="btn btn-primary">Detalles</a>
+                    <a href="<?php echo BASE_URL ?>carrito" class="btn btn-light">Añadir al carrito</a>
                 </div>
             </div>
 
@@ -120,8 +120,8 @@
                 </div>
                 <br>
                 <div class="text-center">
-                    <a href="detalles_producto.html" class="btn btn-primary">Detalles</a>
-                    <a href="carrito.html" class="btn btn-light">Añadir al carrito</a>
+                    <a href="<?php echo BASE_URL ?>detalles_producto" class="btn btn-primary">Detalles</a>
+                    <a href="<?php echo BASE_URL ?>carrito" class="btn btn-light">Añadir al carrito</a>
                 </div>
             </div>
 
@@ -142,8 +142,8 @@
                 </div>
                 <br>
                 <div class="text-center">
-                    <a href="detalles_producto.html" class="btn btn-primary">Detalles</a>
-                    <a href="carrito.html" class="btn btn-light">Añadir al carrito</a>
+                    <a href="<?php echo BASE_URL ?>detalles_producto" class="btn btn-primary">Detalles</a>
+                    <a href="<?php echo BASE_URL ?>carrito" class="btn btn-light">Añadir al carrito</a>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
@@ -163,8 +163,8 @@
                 </div>
                 <br>
                 <div class="text-center">
-                    <a href="detalles_producto.html" class="btn btn-primary">Detalles</a>
-                    <a href="carrito.html" class="btn btn-light">Añadir al carrito</a>
+                    <a href="<?php echo BASE_URL ?>detalles_producto" class="btn btn-primary">Detalles</a>
+                    <a href="<?php echo BASE_URL ?>carrito" class="btn btn-light">Añadir al carrito</a>
                 </div>
             </div>
         </div>
@@ -189,8 +189,8 @@
             </div>
             <br>
             <div class="text-center">
-                <a href="detalles_producto.html" class="btn btn-primary">Detalles</a>
-                <a href="carrito.html" class="btn btn-light">Añadir al carrito</a>
+                <a href="<?php echo BASE_URL ?>detalles_producto" class="btn btn-primary">Detalles</a>
+                <a href="<?php echo BASE_URL ?>carrito" class="btn btn-light">Añadir al carrito</a>
             </div>
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
@@ -210,8 +210,8 @@
             </div>
             <br>
             <div class="text-center">
-                <a href="detalles_producto.html" class="btn btn-primary">Detalles</a>
-                <a href="carrito.html" class="btn btn-light">Añadir al carrito</a>
+                <a href="<?php echo BASE_URL ?>detalles_producto" class="btn btn-primary">Detalles</a>
+                <a href="<?php echo BASE_URL ?>carrito" class="btn btn-light">Añadir al carrito</a>
             </div>
         </div>
 
@@ -232,8 +232,8 @@
             </div>
             <br>
             <div class="text-center">
-                <a href="detalles_producto.html" class="btn btn-primary">Detalles</a>
-                <a href="carrito.html" class="btn btn-light">Añadir al carrito</a>
+                <a href="<?php echo BASE_URL ?>detalles_producto" class="btn btn-primary">Detalles</a>
+                <a href="<?php echo BASE_URL ?>carrito" class="btn btn-light">Añadir al carrito</a>
             </div>
         </div>
 
@@ -254,8 +254,8 @@
             </div>
             <br>
             <div class="text-center">
-                <a href="detalles_producto.html" class="btn btn-primary">Detalles</a>
-                <a href="carrito.html" class="btn btn-light">Añadir al carrito</a>
+                <a href="<?php echo BASE_URL ?>detalles_producto" class="btn btn-primary">Detalles</a>
+                <a href="<?php echo BASE_URL ?>carrito" class="btn btn-light">Añadir al carrito</a>
             </div>
         </div>
 
@@ -276,8 +276,8 @@
             </div>
             <br>
             <div class="text-center">
-                <a href="detalles_producto.html" class="btn btn-primary">Detalles</a>
-                <a href="carrito.html" class="btn btn-light">Añadir al carrito</a>
+                <a href="<?php echo BASE_URL ?>detalles_producto" class="btn btn-primary">Detalles</a>
+                <a href="<?php echo BASE_URL ?>carrito" class="btn btn-light">Añadir al carrito</a>
             </div>
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
@@ -297,148 +297,9 @@
             </div>
             <br>
             <div class="text-center">
-                <a href="detalles_producto.html" class="btn btn-primary">Detalles</a>
-                <a href="carrito.html" class="btn btn-light">Añadir al carrito</a>
+                <a href="<?php echo BASE_URL ?>detalles_producto" class="btn btn-primary">Detalles</a>
+                <a href="<?php echo BASE_URL ?>carrito" class="btn btn-light">Añadir al carrito</a>
             </div>
         </div>
     </div>
-</div>
-
-<br>
-<br>
-<br>
-<br>
-<div class="container">
-    <div class="row">
-        <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-            <div class="card" style="background-color:white; border: 0;">
-                <img style="width: 80%; border-radius: 25px; margin-left: 15%;"
-                    src="https://ae04.alicdn.com/kf/S609de85c1dcf4b5299a9e30d8cbf6882x.jpg_480x480.jpg_.webp"
-                    class="card-img-top" alt="...">
-                <div>
-                    <p style="text-align: center; line-height: 1;">Altavoz inalambrico</p>
-                    <p style="text-align: center; line-height: 0;">⭐⭐⭐⭐⭐ 4.000+ vendido</p>
-                </div>
-                <div class="dest" style="margin-left: 25%;">
-                    <span class="fs-2">PEN 94.35</span>
-                    <span class="text-decoration-line-through">PEN 108.45 </span>
-                    <h5 style="color: red; margin-left: 20%; line-height: 0;"> -20% dto</h5>
-                </div>
-            </div>
-            <br>
-            <div class="text-center">
-                <a href="detalles_producto.html" class="btn btn-primary">Detalles</a>
-                <a href="carrito.html" class="btn btn-light">Añadir al carrito</a>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-            <div class="card" style="background-color:white; border: 0;">
-                <img style="width: 80%; border-radius: 25px; margin-left: 15%;"
-                    src="https://ae04.alicdn.com/kf/S465876c488c343a3980d306dc6ea1ce4Q.jpg_480x480.jpg_.webp"
-                    class="card-img-top" alt="...">
-                <div>
-                    <p style="text-align: center; line-height: 1;">Botella de agua deportiva</p>
-                    <p style="text-align: center;line-height: 0;">⭐⭐⭐⭐⭐ 4.000+ vendido</p>
-                </div>
-                <div class="dest" style="margin-left: 25%;">
-                    <span class="fs-2">PEN 3.87</span>
-                    <span class="text-decoration-line-through">PEN 8.21</span>
-                    <h5 style="color: red; margin-left: 20%; line-height: 0;"> -20% dto</h5>
-                </div>
-            </div>
-            <br>
-            <div class="text-center">
-                <a href="detalles_producto.html" class="btn btn-primary">Detalles</a>
-                <a href="carrito.html" class="btn btn-light">Añadir al carrito</a>
-            </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-            <div class="card" style="background-color:white; border: 0;">
-                <img style="width: 80%; border-radius: 25px; margin-left: 15%;"
-                    src="https://ae04.alicdn.com/kf/Sae91fbe6d22a44dabfba202e84c94c82I.jpg_480x480.jpg_.webp"
-                    class="card-img-top" alt="...">
-                <div>
-                    <p style="text-align: center; line-height: 1;">Reloj Inteligente para hombre</p>
-                    <p style="text-align: center; line-height: 0;">⭐⭐⭐⭐⭐ 4.000+ vendido</p>
-                </div>
-                <div class="dest" style="margin-left: 25%;">
-                    <span class="fs-2">PEN 8.87</span>
-                    <span class="text-decoration-line-through">PEN 19.56 </span>
-                    <h5 style="color: red; margin-left: 20%; line-height: 0;"> -20% dto</h5>
-                </div>
-            </div>
-            <br>
-            <div class="text-center">
-                <a href="detalles_producto.html" class="btn btn-primary">Detalles</a>
-                <a href="carrito.html" class="btn btn-light">Añadir al carrito</a>
-            </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-            <div class="card" style="background-color:white; border: 0;">
-                <img style="width: 80%; border-radius: 25px; margin-left: 15%;"
-                    src="https://ae04.alicdn.com/kf/Sa35d76ebbbcf4a87acba8f9213de2fc01.jpg_480x480.jpg_.webp"
-                    class="card-img-top" alt="...">
-                <div>
-                    <p style="text-align: center; line-height: 1;">Proyector de estrellas</p>
-                    <p style="text-align: center;line-height: 0;">⭐⭐⭐⭐⭐ 4.000+ vendido</p>
-                </div>
-                <div class="dest" style="margin-left: 25%;">
-                    <span class="fs-2">PEN 20.20</span>
-                    <span class="text-decoration-line-through">PEN 58.20 </span>
-                    <h5 style="color: red; margin-left: 20%; line-height: 0;"> -20% dto</h5>
-                </div>
-            </div>
-            <br>
-            <div class="text-center">
-                <a href="detalles_producto.html" class="btn btn-primary">Detalles</a>
-                <a href="carrito.html" class="btn btn-light">Añadir al carrito</a>
-            </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-            <div class="card" style="background-color:white; border: 0;">
-                <img style="width: 80%; border-radius: 25px; margin-left: 15%;"
-                    src="https://ae04.alicdn.com/kf/S1991b49f2a73443788ca7ce65a0291d3g.jpg_480x480.jpg_.webp"
-                    class="card-img-top" alt="...">
-                <div>
-                    <p style="text-align: center; line-height: 1;">Case marvel Spider-Man</p>
-                    <p style="text-align: center; line-height: 0;">⭐⭐⭐⭐⭐ 4.000+ vendido</p>
-                </div>
-                <div class="dest" style="margin-left: 25%;">
-                    <span class="fs-2">PEN 7.84</span>
-                    <span class="text-decoration-line-through">PEN 15.65</span>
-                    <h5 style="color: red; margin-left: 20%; line-height: 0;"> -20% dto</h5>
-                </div>
-            </div>
-            <br>
-            <div class="text-center">
-                <a href="detalles_producto.html" class="btn btn-primary">Detalles</a>
-                <a href="carrito.html" class="btn btn-light">Añadir al carrito</a>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-            <div class="card" style="background-color:white; border: 0;">
-                <img style="width: 80%; border-radius: 25px; margin-left: 15%;"
-                    src="https://ae04.alicdn.com/kf/S534935baa9154e7097f07ff7213d93ee4.jpg_480x480.jpg_.webp"
-                    class="card-img-top" alt="...">
-                <div>
-                    <p style="text-align: center; line-height: 1;">Mini Taladro Electrico</p>
-                    <p style="text-align: center; line-height: 0;">⭐⭐⭐⭐⭐ 4.000+ vendido</p>
-                </div>
-                <div class="dest" style="margin-left: 25%;">
-                    <span class="fs-2">PEN 35.84</span>
-                    <span class="text-decoration-line-through">PEN 54.58</span>
-                    <h5 style="color: red; margin-left: 20%; line-height: 0;"> -20% dto</h5>
-                </div>
-            </div>
-            <br>
-            <div class="text-center">
-                <a href="detalles_producto.html" class="btn btn-primary">Detalles</a>
-                <a href="carrito.html" class="btn btn-light">Añadir al carrito</a>
-            </div>
-        </div>
-    </div>
-</div>
 </div>
