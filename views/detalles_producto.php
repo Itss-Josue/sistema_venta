@@ -75,7 +75,7 @@
                     <span>Lleve hasta 500 zapatillas</span>
                 </div>
                 <div class="d-grid gap-2">
-                    <a href="<?php echo BASE_URL ?>producto" class="btn btn-danger">Comprar</a>
+                    <a href="<?php echo BASE_URL ?>detalles_producto" class="btn btn-danger">Comprar</a>
                     <a href="<?php echo BASE_URL ?>carrito" class="btn btn-light">Añadir al carrito</a>
                 </div>
             </div>

@@ -7,11 +7,17 @@ class vistaModelo{
             if(is_file("./views/".$vista.".php")){
                 $contenido = "./views/".$vista.".php";
             }else{
+
+
+
+
                 $contenido = "404";
             }
 
        }elseif ($vista=="login" || $vista=="index"){
         $contenido = "login";
+     }elseif($vista=="perfil" ){
+        $contenido = "perfil";
 
        }else{
          $contenido = "404";
