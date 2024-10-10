@@ -42,7 +42,7 @@
 
 
             <div>
-              <a href="Inicio.html"
+              <a href="<?php echo BASE_URL ?>index"
                  type="submit" data-mdb-button-init data-mdb-ripple-init
                   class="btn btn-primary btn-lg btn-block">Inicia sesión</a>
             </div>
