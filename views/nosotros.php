@@ -1,0 +1,16 @@
+<main>
+<div class="container">
+    <div class="columna1">
+      <h2>Nosotros</h2>
+      <p>
+        <p>PET SHOP es una tienda virtual, aquí te vas a encontrar muchísima variedad de productos para tu mascota.  
+        </p><br>
+        <p>Hemos tenido siempre como prioridad ofrecer productos variados y de calidad para nuestras mascotas, a precios accesibles y acompañado por un servicio al cliente de primera. </p><br>
+        <p>La creación de una comunidad de clientes leales ha ayudado a Pet Shop a crecer y convertirse en la empresa que somos ahora. No solo somos una tienda virtual, nuestra empresa y todo nuestro equipo nos preocupamos y apoyamos a asociaciones, albergues y fomentamos la tenencia responsable de mascotas.</p><br>
+      </p>
+    </div>
+    <div class="columna2">
+      <img src="<?php echo BASE_URL ?>assets/img/nosotros.jpg">
+    </div>
+</div>
+</main>
