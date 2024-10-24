@@ -6,7 +6,9 @@ $tipo = $_REQUEST['tipo'];
 // instancio de la clase modeloproducto
 $objProducto = new ProductoModel();
 if($tipo=="registrar"){
-    print_r($_POST);
+
+    //print_r($_POST);
+
     if($_POST){
         $codigo = $_POST['codigo'];
         $nombre = $_POST['nombre'];
@@ -19,6 +21,7 @@ if($tipo=="registrar"){
         $proveedor = $_POST['proveedor'];
         if ($codigo=="" || $nombre=="" || $detalle=="" || $precio=="" || $stock=="" || $categoria=="" 
         || $fecha_v=="" || $imagen=="" || $proveedor=="") {
+          // respuesta
             $arr_Respuesta = array('status'=> false,
             'mensaje'=>'Error, campos vacios');
         } else{
@@ -27,6 +30,7 @@ if($tipo=="registrar"){
              $detalle, $precio, $stock, $categoria,
               $fecha_v, $imagen, $proveedor);
               if ($arrProducto->id>0) {
+
                 $arr_Respuesta = array('status'=> true,
                 'mensaje'=>'Registro exitoso');
               } else {

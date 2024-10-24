@@ -13,8 +13,7 @@ class ProductoModel{
     public function registrarProducto(
         $codigo, $nombre,$detalle,
          $precio, $stock, $categoria,
-        $fecha_v, $imagen, $proveedor
-    ){
+        $fecha_v, $imagen, $proveedor){
             $sql = $this->conexion->query("CALL insertproducto('{$codigo}',
             '{$nombre}','{$detalle}','{$precio}','{$stock}','{$categoria}',
             '{$fecha_v}','{$imagen}','{$proveedor}')");

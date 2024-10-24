@@ -43,3 +43,4 @@
 </form>
 </div>
 <script src="<?php echo BASE_URL;?>views/js/functionsproducto.js"></script>
+<script>listarcategorias();</script>
