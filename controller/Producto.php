@@ -9,14 +9,14 @@ if($tipo=="registrar"){
     print_r($_POST);
     if($_POST){
         $codigo = $_POST['codigo'];
-        $codigo = $_POST['nombre'];
-        $codigo = $_POST['detalle'];
-        $codigo = $_POST['precio'];
-        $codigo = $_POST['stock'];
-        $codigo = $_POST['categoria'];
-        $codigo = $_POST['fecha_v'];
-        $codigo = $_POST['imagen'];
-        $codigo = $_POST['proveedor'];
+        $nombre = $_POST['nombre'];
+        $detalle = $_POST['detalle'];
+        $precio = $_POST['precio'];
+        $stock = $_POST['stock'];
+        $categoria = $_POST['categoria'];
+        $fecha_v = $_POST['fecha_v'];
+        $imagen = $_POST['imagen'];
+        $proveedor = $_POST['proveedor'];
         if ($codigo=="" || $nombre=="" || $detalle=="" || $precio=="" || $stock=="" || $categoria=="" 
         || $fecha_v=="" || $imagen=="" || $proveedor=="") {
             $arr_Respuesta = array('status'=> false,
@@ -33,6 +33,7 @@ if($tipo=="registrar"){
                 $arr_Respuesta = array('status'=> false,
                 'mensaje'=>'Error al registrar producto');
               }
+              echo json_encode($arr_Respuesta);
         }
     }
 }

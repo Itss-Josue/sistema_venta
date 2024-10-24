@@ -6,7 +6,7 @@ async function registrarProducto() {
     let stock = document.querySelector('#stock').value;
     let categoria = document.querySelector('#categoria').value;
     let fecha_v = document.querySelector('#fecha_v').value;
-    let img = document.querySelector('#img').value;
+    let img = document.querySelector('#imagen').value;
     let proveedor = document.querySelector('#proveedor').value;
     if (codigo=="" || nombre =="" || detalle=="" || precio =="" || stock ==""
         || categoria =="" || fecha_v =="" || img =="" || proveedor =="") {

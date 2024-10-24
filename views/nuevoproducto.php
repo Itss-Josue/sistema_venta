@@ -32,7 +32,7 @@
     </div>
     <div>
         <label for="img">Imagen del Producto:</label>
-        <input type="text" name="img" id="img"   class="form-control" required>
+        <input type="text" name="imagen" id="imagen"   class="form-control" required>
     </div>
     <div>
         <label for="proveedor">Proveedor:</label>
