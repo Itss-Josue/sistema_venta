@@ -8,7 +8,7 @@ $objCategoria = new CategoriaModel();
 if ($tipo=="listar") {
     //respuesta
     $arr_Respuesta = array('status'=> false, 'contenido'=>'');
-    //$arr_Categorias = $objCategoria->obtenercategorias();
+    $arr_Categorias = $objCategoria->obtenercategorias();
     print_r($arr_Categorias);
 }
 ?>
