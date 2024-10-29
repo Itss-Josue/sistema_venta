@@ -37,28 +37,26 @@ async function registrarProducto() {
     }
 }
 
-async function listarcategorias() {
-    try{
-        let respuesta = await fetch(base_url+'controller/Categoria.php?tipo=listar');
+//  listar_categorias registrados en la base de datos
+
+async function listar_categorias() {
+    try {
+        // envia datos hacia el controlador
+        let respuesta = await fetch(base_url +
+            'controller/Categoria.php?tipo=listar');
         json = await respuesta.json();
         if (json.status) {
             let datos = json.contenido;
             datos.forEach(element => {
-                $('#categoria').append($('<option />'),{
-                text: '${element.nombre}' ,
-                value: ${element.id}'
-            
-                });
-        
-            
+                $('#categoria').append($('<option />'), {
+                    text: `${element.nombre}`,
+                    value: `${element.id}`
+                }); 
+            });
         }
-
-            console.log(respuesta);
-
-    } catch (e){
-        console.log("Error al cargar categorias" +
-            e);
-     }
+        console.log(respuesta);
+    } catch (e) {
+        console.e("Error al cargar categorias" + e)
+    }
 }
-
 
