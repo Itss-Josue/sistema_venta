@@ -17,7 +17,7 @@ if($tipo=="registrar"){
         $stock = $_POST['stock'];
         $categoria = $_POST['categoria'];
         $fecha_v = $_POST['fecha_v'];
-        $imagen = $_POST['imagen'];
+        $imagen = $_['imagen'];
         $proveedor = $_POST['proveedor'];
         if ($codigo=="" || $nombre=="" || $detalle=="" || $precio=="" || $stock=="" || $categoria=="" 
         || $fecha_v=="" || $imagen=="" || $proveedor=="") {

@@ -39,7 +39,7 @@ async function registrarProducto() {
 
 //  listar_categorias registrados en la base de datos
 
-async function listar_categorias() {
+async function listarcategorias() {
     try {
         // envia datos hacia el controlador
         let respuesta = await fetch(base_url +
@@ -47,16 +47,45 @@ async function listar_categorias() {
         json = await respuesta.json();
         if (json.status) {
             let datos = json.contenido;
+            let contenido_select = '<option value="">Seleccione</option>';
             datos.forEach(element => {
-                $('#categoria').append($('<option />'), {
+                contenido_select += '<option value="' + element.id + '">' + element.nombre + '</option>';
+                // se trabaja con jquery
+               /* $('#categoria').append($('<option />', {
                     text: `${element.nombre}`,
                     value: `${element.id}`
-                }); 
+                })); */
             });
+            document.getElementById('categoria').innerHTML = contenido_select;
         }
         console.log(respuesta);
     } catch (e) {
-        console.e("Error al cargar categorias" + e)
+        console.log("Error al cargar categorias" + e)
+    }
+}
+
+async function listarproveedores() {
+    try {
+        // envia datos hacia el controlador
+        let respuesta = await fetch(base_url +
+            'controller/Persona.php?tipo=listar');
+        json = await respuesta.json();
+        if (json.status) {
+            let datos = json.contenido;
+            let contenido_select = '<option value="">Seleccione</option>';
+            datos.forEach(element => {
+                contenido_select += '<option value="' + element.rol + '">' + element.razon_social + '</option>';
+                // se trabaja con jquery
+               /* $('#categoria').append($('<option />', {
+                    text: `${element.nombre}`,
+                    value: `${element.id}`
+                })); */
+            });
+            document.getElementById('proveedor').innerHTML = contenido_select;
+        }
+        console.log(respuesta);
+    } catch (e) {
+        console.log("Error al cargar proveedor" + e)
     }
 }
 

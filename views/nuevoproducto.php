@@ -38,7 +38,9 @@
     </div>
     <div>
         <label for="proveedor">Proveedor:</label>
-        <input type="number" name="proveedor" id="proveedor"  placeholder="Proveedor" class="form-control" required>
+        <select name="proveedor" id="proveedor" class="form-control" required>
+            <option>Seleccione</option>
+        </select>
     </div>
     <br>
     <button type="button" class="btn btn-success" onclick="registrarProducto();">Registrar</button>
@@ -46,3 +48,4 @@
 </div>
 <script src="<?php echo BASE_URL;?>views/js/functionsproducto.js"></script>
 <script>listarcategorias();</script>
+<script>listarproveedores();</script>

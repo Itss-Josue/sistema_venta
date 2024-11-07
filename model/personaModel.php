@@ -2,7 +2,7 @@
 
 require_once "../librerias/conexion.php";
 
-class CategoriaModel
+class PersonaModel
 {
     private $conexion;
     function __construct()
@@ -10,10 +10,10 @@ class CategoriaModel
         $this->conexion = new Conexion();
         $this->conexion = $this->conexion->connect();
     }
-    public function obtener_categorias()
+    public function obtener_proveedor()
     {
         $arrRespuesta = array();
-        $respuesta = $this->conexion->query(" SELECT * FROM categoria");
+        $respuesta = $this->conexion->query(" SELECT * FROM persona WHERE rol='Proveedor'");
         while ($objeto = $respuesta->fetch_object()) {
             array_push($arrRespuesta, $objeto);
             
