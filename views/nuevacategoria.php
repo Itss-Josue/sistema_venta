@@ -11,3 +11,5 @@
         <button type="button" class="btn btn-success" onclick="registrarCategoria();">Registrar</button>
     </form>
 </div>
+
+<script src="<?php echo BASE_URL?>views/js/functionscategoria.js"></script>

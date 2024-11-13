@@ -25,4 +25,15 @@ if ($tipo == "listar") {
     echo json_encode($arr_Respuesta);
 }
 
+if($tipo=="registrar"){
+    // print_r($_POST);
+    // echo $_FILES['imagen']['tmp_name'];
+
+    if($_POST){
+        $nombre = $_POST['nombre'];
+        $detalle = $_POST['detalle'];
+       
+        if ( $nombre=="" || $detalle=="") {
+
+
 ?>
