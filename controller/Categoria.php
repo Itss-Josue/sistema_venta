@@ -34,6 +34,24 @@ if($tipo=="registrar"){
         $detalle = $_POST['detalle'];
        
         if ( $nombre=="" || $detalle=="") {
+            $arr_Respuesta = array('status'=> false,
+            'mensaje'=>'Error, campos vacios');
+        } else{
+            $arrCategoria = 
+            $objCategoria->registrarCategoria( $nombre,
+             $detalle);
+              if ($arrCategoria->id>0) {
+                $arr_Respuesta = array('status'=> true,
+                'mensaje'=>'Registro exitoso');
+              
+             } else {
+                $arr_Respuesta = array('status'=> false,
+                'mensaje'=>'Error al registrar producto');
+              }
+              echo json_encode($arr_Respuesta);
+        }
+    }
+}
 
 
 ?>
