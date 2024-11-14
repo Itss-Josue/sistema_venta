@@ -1,32 +1,29 @@
+<form id="frmRegistrarCompra" action="" class="form-control"    >
+    <div class="form-group">   
+        
+    <div class="campo-contenedor">
+            <label for="producto" class="etiqueta-flotante">producto:</label>
+            <select name="id_producto" id="id_producto"  class="entrada-destacada">
+                <option  class="entrada-destacada" >Seleccione</option>
+            </select>
+        </div>
+        <label for="cantidad">cantidad:</label><br>
+        <input id="cantidad" name="cantidad" type="number" placeholder="cantidad" required>
 
-    <title>Formulario de Venta</title>
+        <label for="precio">precio:</label><br>
+        <input id="precio" name="precio" type="number" placeholder="Precio" required>
 
-    <div class="container mt-5">
-        <h2>Formulario de Venta</h2>
-        <form action="/ruta_de_tu_servidor" method="POST">
-            <div class="form-group">
-                <label for="id_producto">ID Producto:</label>
-                <input type="text" id="idproducto" name="idproducto" class="form-control" required>
-            </div>
+        <div class="campo-contenedor">
+            <label for="trabajador" class="etiqueta-flotante">Trabajador:</label>
+            <select name="id_trabajador" id="id_trabajador"  class="entrada-destacada">
+                <option  class="entrada-destacada" >Seleccione</option>
+            </select>
+        </div>
 
-            <div class="form-group">
-                <label for="cantidad">Cantidad:</label>
-                <input type="number" id="cantidad" name="cantidad" class="form-control" min="1" required>
-            </div>
-
-            <div class="form-group">
-                <label for="precio">Precio:</label>
-                <input type="number" id="precio" name="precio" class="form-control" step="0.01" required>
-            </div>
-
-            <div class="form-group">
-                <label for="id_trabajador">ID Trabajador:</label>
-                <input type="text" id="idtrabajador" name="idtrabajador" class="form-control" required>
-            </div>
-
-            <button type="button" class="btn btn-success" onclick="registrarCompra();">Registrar</button>
-        </form>
+        <button type="button" class="btn btn-success" onclick="registrarCompra();">Registrar</button>
     </div>
-    <script src="<?php echo BASE_URL;?>views/js/functionscompra.js"></script>
-<script>listarcategorias();</script>
-<script>listarproveedores();</script>
+</form>
+
+<script src="<?php echo BASE_URL;?>views/js/functions_compras.js"></script>
+<script>listar_productos();</script>
+<script>listar_trabajadores();</script>

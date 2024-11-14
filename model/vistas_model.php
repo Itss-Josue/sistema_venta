@@ -1,8 +1,12 @@
 <?php
-
+session_start();
 class vistaModelo{
     protected static function obtener_vista($vista){
-       $palabras_permitidas =['usuario','calzado','producto','carrito','contacto','detalleproducto','electronica','mejoresmarcas','modahombre','inicio','perfil','nuevoproducto'];
+       $palabras_permitidas =['usuario','calzado','producto','carrito','contacto','detalleproducto','electronica','mejoresmarcas','modahombre','inicio','perfil','nuevoproducto','nuevacategoria','nuevacompra','nuevousuario'];
+       if(!isset($_SESSION['sesion_ve
+       ntas_id'])) {
+            return "login";
+       }
        if (in_array($vista,$palabras_permitidas)){
             if(is_file("./views/".$vista.".php")){
                 $contenido = "./views/".$vista.".php";

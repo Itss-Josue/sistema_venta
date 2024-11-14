@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,6 +9,7 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 	<link rel="stylesheet" href="<?php echo BASE_URL ?>views/plantilla/css/estilos.css">
+    <link rel="stylesheet" href="<?php echo BASE_URL ?>views/plantilla/css/login.css">
     <script>
         const base_url = '<?php echo BASE_URL?>';
     </script>
@@ -25,9 +27,11 @@
                 <a href="<?php echo BASE_URL?>perfil" class="a" style="text-decoration: none;">
                     <span>¡Hola, Josue!</span>
                 </a>
-                <a href="carrito.html">
+                <a href="carrito">
                     <img src="./views/plantilla/img/carr.jpeg" alt="Perú" class="flag" width="60" height="50">
                 </a>
+                <a onclick="cerrar_sesion();">Cerrar sesion</a>
+                <a onclick="cerrar_sesion();">Cerrar sesion</a>
 
             </div>
         </div>

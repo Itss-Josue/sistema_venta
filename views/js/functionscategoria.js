@@ -30,3 +30,27 @@ async function registrarCategoria() {
         console.log("Oops, ocurrio un error" + e);
     }
 }
+async function listarcategorias() {
+    try {
+        // envia datos hacia el controlador
+        let respuesta = await fetch(base_url +
+            'controller/Categoria.php?tipo=listar');
+        json = await respuesta.json();
+        if (json.status) {
+            let datos = json.contenido;
+            let contenido_select = '<option value="">Seleccione</option>';
+            datos.forEach(element => {
+                contenido_select += '<option value="' + element.id + '">' + element.nombre + '</option>';
+                // se trabaja con jquery
+               /* $('#categoria').append($('<option />', {
+                    text: `${element.nombre}`,
+                    value: `${element.id}`
+                })); */
+            });
+            document.getElementById('categoria').innerHTML = contenido_select;
+        }
+        console.log(respuesta);
+    } catch (e) {
+        console.log("Error al cargar categorias" + e)
+    }
+}
