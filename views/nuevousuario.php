@@ -56,24 +56,8 @@
                 <label for="password">Contraseña:</label>
                 <input type="password" id="password" name="password" class="form-control" required>
             </div>
-
-            <div class="form-group">
-                <label for="estado">Estado:</label>
-                <select id="estado" name="estado" class="form-control" required>
-                    <option value="activo">Activo</option>
-                    <option value="inactivo">Inactivo</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <label for="fecha_reg">Fecha de Registro:</label>
-                <input type="date" id="fecha_reg" name="fecha_reg" class="form-control" required>
-            </div>
-
             <button type="button" class="btn btn-success" onclick="registrarUsuario();">Registrar</button>
         </form>
     </div>
     
     <script src="<?php echo BASE_URL;?>views/js/functionspersona.js"></script>
-<script>listarcategorias();</script>
-<script>listarproveedores();</script>

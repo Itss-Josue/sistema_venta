@@ -27,47 +27,38 @@ if ($tipo == "listar") {
 }
 
 
-if ($tipo == "registrar") {
-    // Captura y validación de los datos del formulario
-    $nro_identidad = $_POST['nro_identidad'] ?? '';
-    $razon_social = $_POST['razon_social'] ?? '';
-    $telefono = $_POST['telefono'] ?? '';
-    $correo = $_POST['correo'] ?? '';
-    $departamento = $_POST['departamento'] ?? '';
-    $provincia = $_POST['provincia'] ?? '';
-    $distrito = $_POST['distrito'] ?? '';
-    $cod_postal = $_POST['cod_postal'] ?? '';
-    $direccion = $_POST['direccion'] ?? '';
-    $rol = $_POST['rol'] ?? '';
-    $password = $_POST['password'] ?? '';
-    $estado = $_POST['estado'] ?? '';
-    $fecha_reg = $_POST['fecha_reg'] ?? '';
+if ($tipo=="registrar"){
+    //print_r($_POST);
+    if ($_POST) {
+        $nro_identidad = $_POST['nroIdentidad'];
+        $razon_social = $_POST['razonSocial'];
+        $telefono = $_POST['telefono'];
+        $correo = $_POST['correo'];
+        $departamento = $_POST['departamento'];
+        $provincia = $_POST['provincia'];
+        $distrito = $_POST['distrito'];
+        $cod_postal = $_POST['cod_postal'];
+        $direccion = $_POST['direccion'];
+        $rol = $_POST['rol'];
 
     $secure_password = password_hash($nro_identidad, PASSWORD_DEFAULT);
 
     // Validación de campos vacíos
-    if (
-        empty($nro_identidad) || empty($razon_social) || empty($telefono) ||
-        empty($correo) || empty($departamento) || empty($provincia) ||
-        empty($distrito) || empty($cod_postal) || empty($direccion) ||
-        empty($rol) || empty($password) || empty($estado) || empty($fecha_reg)
-    ) {
-        echo json_encode(['status' => false, 'mensaje' => 'Error, todos los campos son obligatorios']);
-        return;
-    }
+    if($nro_identidad=="" || $razon_social=="" || $telefono=="" || $correo=="" || $departamento=="" || $provincia=="" ||  $distrito=="" || $cod_postal=="" || $direccion=="" || $rol==""){
+        $arr_Respuesta = array('status'=>false,'mensaje'=>'Error, campos vacios'); //respuesta
+    }else {
+        $arrPersona = $objPersona->registrarPersona($nro_identidad, $razon_social, $telefono, $correo, $departamento, $provincia, $distrito, $cod_postal, $direccion, $rol, $secure_password);
+    
+        if ($arrPersona->id>0) {
+            $arr_Respuesta = array('status'=>true, 'mensaje'=>'Registro exitoso');
 
-    // Registrar usuario a través del modelo
-    $resultado = $objUsuario->registrarUsuario(
-        $nro_identidad, $razon_social, $telefono, $correo,
-        $departamento, $provincia, $distrito, $cod_postal,
-        $direccion, $rol, $password, $estado, $fecha_reg
-    );
-
-    // Respuesta según el resultado del modelo
-    if ($resultado) {
-        echo json_encode(['status' => true, 'mensaje' => 'Usuario registrado exitosamente']);
-    } else {
-        echo json_encode(['status' => false, 'mensaje' => 'Error al registrar el usuario']);
+        }else{
+            $arr_Respuesta = array('status'=>false, 'mensaje'=>'Error al registrar persona');
+        }
     }
+            echo json_encode($arr_Respuesta);
+
 }
+}
+
 ?>

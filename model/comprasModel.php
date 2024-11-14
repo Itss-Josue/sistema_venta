@@ -12,13 +12,11 @@ class ComprasModel
         $producto,
         $cantidad,
         $precio,
-        $fecha_compra,
-    
         $trabajador
 
     ) {
         $sql = $this->conexion->query("CALL insertar_compra
-        ('{$producto}', '{$cantidad}', '{$precio}', '{$fecha_compra}', '{$trabajador}')");
+        ('{$producto}', '{$cantidad}', '{$precio}', '{$trabajador}')");
        
          if ($sql == false) {
             print_r(value: $this->conexion->error);
@@ -29,7 +27,7 @@ class ComprasModel
         return $sql;
     }
     
-    public function obtener_productos()
+    public function obtenerproductos()
     {
         $arrRespuesta = array();
         $respuesta = $this->conexion->query(" SELECT * FROM producto");

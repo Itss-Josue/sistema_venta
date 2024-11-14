@@ -18,7 +18,7 @@ async function registrarUsuario() {
 
     // Validar que todos los campos estén llenos
     if (
-        nroIdentidad === "" || razonSocial === "" || telefono === "" ||
+        nro_identidad === "" || razonSocial === "" || telefono === "" ||
         correo === "" || departamento === "" || provincia === "" ||
         distrito === "" || codPostal === "" || direccion === "" ||
         rol === "" || password === "" || estado === "" || fechaReg === ""
@@ -28,24 +28,10 @@ async function registrarUsuario() {
     }
 
     try {
-        // Crear una instancia de FormData con los datos del formulario
-        const datos = new FormData();
-        datos.append('nro_identidad', nroIdentidad);
-        datos.append('razon_social', razonSocial);
-        datos.append('telefono', telefono);
-        datos.append('correo', correo);
-        datos.append('departamento', departamento);
-        datos.append('provincia', provincia);
-        datos.append('distrito', distrito);
-        datos.append('cod_postal', codPostal);
-        datos.append('direccion', direccion);
-        datos.append('rol', rol);
-        datos.append('password', password);
-        datos.append('estado', estado);
-        datos.append('fecha_reg', fechaReg);
+        const datos = new FormData(frmRegistrar);
 
         // Enviar los datos hacia el controlador
-        let respuesta = await fetch(base_url + 'controller/Usuario.php?tipo=registrar', {
+        let respuesta = await fetch(base_url + 'controller/Persona.php?tipo=registrar', {
             method: 'POST',
             mode: 'cors',
             cache: 'no-cache',
