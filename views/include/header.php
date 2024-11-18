@@ -31,7 +31,7 @@
                     <img src="./views/plantilla/img/carr.jpeg" alt="Perú" class="flag" width="60" height="50">
                 </a>
                 <a onclick="cerrar_sesion();">Cerrar sesion</a>
-                <a onclick="cerrar_sesion();">Cerrar sesion</a>
+                
 
             </div>
         </div>
