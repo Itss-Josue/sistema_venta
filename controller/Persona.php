@@ -47,7 +47,7 @@ if ($tipo=="registrar"){
     if($nro_identidad=="" || $razon_social=="" || $telefono=="" || $correo=="" || $departamento=="" || $provincia=="" ||  $distrito=="" || $cod_postal=="" || $direccion=="" || $rol==""){
         $arr_Respuesta = array('status'=>false,'mensaje'=>'Error, campos vacios'); //respuesta
     }else {
-        $arrPersona = $objPersona->registrarPersona($nro_identidad, $razon_social, $telefono, $correo, $departamento, $provincia, $distrito, $cod_postal, $direccion, $rol, $secure_password);
+        $arrPersona = $objPersona->registrarUsuario($nro_identidad, $razon_social, $telefono, $correo, $departamento, $provincia, $distrito, $cod_postal, $direccion, $rol, $secure_password);
     
         if ($arrPersona->id>0) {
             $arr_Respuesta = array('status'=>true, 'mensaje'=>'Registro exitoso');

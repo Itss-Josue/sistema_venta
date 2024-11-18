@@ -68,7 +68,7 @@ if ($tipo == "registrar") {
 }
 else if ($tipo == "listar") {
   $arr_Respuesta = array('status' => false, 'contenido' => '');
-  $arrProducto = $objProducto->obtenerProductos();
+  $arrProducto = $objProducto->obtenerproductos();
 
   if (!empty($arrProducto)) {
       for ($i = 0; $i < count($arrProducto); $i++) {
