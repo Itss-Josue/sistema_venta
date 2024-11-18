@@ -1,5 +1,6 @@
 <?php
 
+ 
 require_once('../model/personaModel.php');
 //instanciar la clase categoria model
 $objPersona = new PersonaModel();
@@ -9,7 +10,7 @@ $tipo = $_REQUEST['tipo'];
 if ($tipo == "listar") {
     //respuesta 
     $arr_Respuesta = array('status' => false, 'contenido' => '');
-    $arr_Personas = $objPersona->obtener_proveedor();
+    $arr_Personas = $objPersona->obtenerusuarios();
     if (!empty($arr_Personas)) {
 
         // recorremos el array para agregar las opciones de las categorias.

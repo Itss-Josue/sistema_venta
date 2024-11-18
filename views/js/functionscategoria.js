@@ -30,7 +30,7 @@ async function registrarCategoria() {
         console.log("Oops, ocurrio un error" + e);
     }
 }
-async function listarcategorias() {
+async function listar_categorias() {
     try {
         // envia datos hacia el controlador
         let respuesta = await fetch(base_url +

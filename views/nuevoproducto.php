@@ -47,5 +47,5 @@
 </form>
 </div>
 <script src="<?php echo BASE_URL;?>views/js/functionsproducto.js"></script>
-<script>listar_categorias();</script>
-<script>listar_proveedores();</script>
+<script>listarcategorias();</script>
+<script>listarproveedores();</script>

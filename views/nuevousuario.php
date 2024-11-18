@@ -60,4 +60,4 @@
         </form>
     </div>
     
-    <script src="<?php echo BASE_URL;?>views/js/functionspersona.js"></script>
+    <script src="<?php echo BASE_URL ;?>views/js/functionspersona.js"></script>
