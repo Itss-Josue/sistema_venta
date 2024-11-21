@@ -51,11 +51,6 @@
                 <label for="rol">Rol:</label>
                 <input type="text" id="rol" name="rol" class="form-control" required>
             </div>
-
-            <div class="form-group">
-                <label for="password">Contraseña:</label>
-                <input type="password" id="password" name="password" class="form-control" required>
-            </div>
             <button type="button" class="btn btn-success" onclick="registrarUsuario();">Registrar</button>
         </form>
     </div>

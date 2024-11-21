@@ -1,6 +1,6 @@
 async function registrarUsuario() {
     // Obtener los valores de los campos del formulario
-    let nroIdentidad = document.getElementById('nro_identidad').value;
+    let nro_identidad = document.getElementById('nro_identidad').value;
     let razonSocial = document.querySelector('#razon_social').value;
     let telefono = document.querySelector('#telefono').value;
     let correo = document.querySelector('#correo').value;
@@ -10,10 +10,6 @@ async function registrarUsuario() {
     let codPostal = document.querySelector('#cod_postal').value;
     let direccion = document.querySelector('#direccion').value;
     let rol = document.querySelector('#rol').value;
-    let password = document.querySelector('#password').value;
-    let estado = document.querySelector('#estado').value;
-    let fechaReg = document.querySelector('#fecha_reg').value;
-
 
 
     // Validar que todos los campos estén llenos
@@ -21,7 +17,7 @@ async function registrarUsuario() {
         nro_identidad === "" || razonSocial === "" || telefono === "" ||
         correo === "" || departamento === "" || provincia === "" ||
         distrito === "" || codPostal === "" || direccion === "" ||
-        rol === "" || password === "" || estado === "" || fechaReg === ""
+        rol === ""
     ) {
         alert("Error!!, Campos vacíos");
         return;
