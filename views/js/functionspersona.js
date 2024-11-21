@@ -47,4 +47,5 @@ async function registrarUsuario() {
     } catch (e) {
         console.log("Oops, ocurrió un error: " + e);
     }
+    
 }

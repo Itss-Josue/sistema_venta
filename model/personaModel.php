@@ -24,4 +24,13 @@ class PersonaModel{
         $sql = $sql->fetch_object();
         return $sql;
     }
+
+
+    
+    public function obtener_proveedor_id($id){
+        $respuesta = $this->conexion->query("SELECT * FROM  persona where id='{$id}'");
+        $objeto = $respuesta->fetch_object();
+        return $respuesta;
+    }
+    
 }

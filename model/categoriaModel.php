@@ -21,12 +21,16 @@ class CategoriaModel
         return $arrRespuesta;
     }
 
-    public function registrarCategoria(
-        $nombre, $detalle,
-    ){
-        $sql = $this->conexion->query("CALL insertarcategoria('{$nombre}','{$detalle}')");
+    public function registrarCategoria($nombre, $detalle,){
+        $sql = $this->conexion->query("CALL insertcategoria('{$nombre}','{$detalle}')");
         $sql = $sql->fetch_object();
         return $sql;
     }
+    public function obtener_categoria($id){
+        $respuesta = $this->conexion->query("SELECT * FROM  categoria where id='{$id}'");
+        $objeto = $respuesta->fetch_object();
+        return $respuesta;
+    }
+    
 }
 ?>
