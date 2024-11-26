@@ -36,10 +36,45 @@ if ($tipo=="registrar"){
         }else{
             $arr_Respuesta = array('status'=>false, 'mensaje'=>'Error al registrar persona');
         }
+        echo json_encode($arr_Respuesta);
     }
-            echo json_encode($arr_Respuesta);
-
 }
 }
+if ($tipo=="listarTrabajadores") {
+    //respuesta
+    $arr_Respuesta = array('status'=>false, 'contenido'=>'');
+    $arr_personas = $objPersona->obtener_personas();
+    if (!empty($arr_personas)) {
+        //recoremos el array para agregar las opciones de las categorias
+        for ($i=0; $i < count($arr_personas); $i++) { 
+            $id_categoria = $arr_personas[$i]->id;
+            $categoria = $arr_personas[$i]->razon_social;
+            $opciones = '';
+            $arr_personas[$i]->options = $opciones;
+        }
+    $arr_Respuesta['status'] = true;
+    $arr_Respuesta['contenido'] = $arr_personas;
+ }
+    echo json_encode($arr_Respuesta);
+}
 
+
+if ($tipo=="listar") {
+    $arr_respuesta = array('status'=>false,'contenido'=>'');
+    $arr_proveedor =  $objPersona->obtener_proveedor();
+
+    if (!empty($arr_proveedor)) {
+        
+        for ($i=0; $i < count($arr_proveedor); $i++) { 
+            $rol_persona = $arr_proveedor[$i]->rol;
+            $categoria = $arr_proveedor[$i]->razon_social;
+            $opciones = '';
+            $arr_proveedor[$i]->options = $opciones;
+        }
+        $arr_respuesta['status'] = true;
+        $arr_respuesta['contenido'] = $arr_proveedor;
+    }
+    //$arr_respuesta['contenido']=$arr_proveedor;
+    echo json_encode($arr_respuesta);
+}
 ?>
