@@ -9,7 +9,8 @@ async function iniciar_sesion() {
         //capturamos datos del formulario html nuevo-producto
         const datos = new FormData(frm_iniciar_sesion);
         //enviamos datos hacia el controlador
-        let respuesta = await fetch(base_url+'controller/Login.php?tipo=iniciar_sesion',{
+        let respuesta = await fetch(base_url+'controller/Login.php?tipo=iniciar_sesion',
+            {
             method: 'POST',
             mode: 'cors',
             cache: 'no-cache',
