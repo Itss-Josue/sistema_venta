@@ -43,7 +43,7 @@ if ($tipo=="registrar"){
 if ($tipo=="listarTrabajadores") {
     //respuesta
     $arr_Respuesta = array('status'=>false, 'contenido'=>'');
-    $arr_personas = $objPersona->obtener_personas();
+    $arr_personas = $objPersona->obtener_trabajador();
     if (!empty($arr_personas)) {
         //recoremos el array para agregar las opciones de las categorias
         for ($i=0; $i < count($arr_personas); $i++) { 
@@ -61,7 +61,7 @@ if ($tipo=="listarTrabajadores") {
 
 if ($tipo=="listar") {
     $arr_respuesta = array('status'=>false,'contenido'=>'');
-    $arr_proveedor =  $objPersona->obtener_proveedor();
+    $arr_proveedor =  $objPersona->obtenerproveedor();
 
     if (!empty($arr_proveedor)) {
         

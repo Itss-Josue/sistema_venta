@@ -1,8 +1,8 @@
 
 <div class="fo1">
-<h1 class="text-center mb-4 ">Nuevo producto</h1>
+
 <form class="form1" action="" id="formRegistrarProd">
-    
+<h1 class="text-center mb-4 ">Editar Producto</h1>
     <div>
         <label for="codigo">Código:</label>
         <input type="text" name="codigo" id="codigo"  placeholder="Codigo" class="form-control" required>
@@ -20,14 +20,14 @@
         <input type="number" name="precio" id="precio"  placeholder="Precio" class="form-control" required>
     </div>
     <div>
-        <label for="stock">Stock:</label>
-        <input type="number" name="stock" id="stock"  placeholder="Stock" class="form-control" required>
-    </div>
-    <div>
         <label for="categoria">Categoría:</label>
         <select name="categoria" id="categoria" class="form-control" required>
             <option>Seleccione</option>
         </select>
+    </div>
+    <div>
+    <label for="Fecha de Vencimiento">Fecha de Vencimiento:</label><br>
+    <input type="date" name="fecha_v" id="fecha_v" placeholder="Fecha de Vencimiento" class="form-control" required>
     </div>
     <div>
         <label for="img">Imagen del Producto:</label>
@@ -36,7 +36,7 @@
     <div>
         <label for="proveedor">Proveedor:</label>
         <select name="proveedor" id="proveedor" class="form-control" required>
-            <option>Seleccione</option>
+            <option>Seleccione</option> 
         </select>
     </div>
     <br>
@@ -46,3 +46,8 @@
 <script src="<?php echo BASE_URL;?>views/js/functionsproducto.js"></script>
 <script>listarcategorias();</script>
 <script>listarproveedores();</script>
+<script>
+    const id_p=<? $pagina=explode("/", $_GET['views']); echo $pagina['1']; ?>;
+    ver_producto(id_p);
+</script>
+

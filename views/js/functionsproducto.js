@@ -16,7 +16,7 @@ async function listar_productos() {
                         <td>${item.stock}</td>
                         <td>${item.categoria.nombre}</td>
                         <td>${item.proveedor.nombre}</td>
-                        <td></td>
+                        <td>${item.options}</td>
                         `;
                 document.querySelector('#tbl_producto').appendChild(nueva_fila);
             });
@@ -37,11 +37,10 @@ async function registrarProducto() {
     let precio = document.querySelector('#precio').value;
     let stock = document.querySelector('#stock').value;
     let categoria = document.querySelector('#categoria').value;
-    let fecha_v = document.querySelector('#fecha_v').value;
     let img = document.querySelector('#imagen').value;
     let proveedor = document.querySelector('#proveedor').value;
     if (codigo=="" || nombre =="" || detalle=="" || precio =="" || stock ==""
-        || categoria =="" || fecha_v =="" || img =="" || proveedor =="") {
+        || categoria =="" ||  img =="" || proveedor =="") {
             alert("Error!!, Campos vacíos");
             return;
     }
@@ -99,8 +98,7 @@ async function listarcategorias() {
 async function listarproveedores() {
     try {
         // envia datos hacia el controlador
-        let respuesta = await fetch(base_url +
-            'controller/Persona.php?tipo=listar');
+        let respuesta = await fetch(base_url + 'controller/Persona.php?tipo=listar');
         json = await respuesta.json();
         if (json.status) {
             let datos = json.contenido;
@@ -118,6 +116,28 @@ async function listarproveedores() {
         console.log(respuesta);
     } catch (e) {
         console.log("Error al cargar proveedor" + e)
+    }
+}
+async function ver_producto(id) {
+    const formData = new FormData();
+    formData.append('id_producto', id);
+    try {
+        let respuesta = await fetch(base_url + 'controller/Producto.php?tipo=ver', {
+            method: 'POST',
+            mode: 'cors',
+            cache: 'no-cache',
+            body: formData
+        });
+        json = await respuesta.json();
+        if (json.status) {
+            document.querySelector('#codigo').value = json.contenido.codigo;
+        }else{
+            window.location = base_url+"productos";
+        }   
+
+        console.log(json);
+    } catch (error) {
+        console.log("Oops ocurrio un error" +error);
     }
 }
 
