@@ -11,8 +11,8 @@ $tipo = $_REQUEST['tipo'];
 if ($tipo=="registrar"){
     //print_r($_POST);
     if ($_POST) {
-        $nro_identidad = $_POST['nroIdentidad'];
-        $razon_social = $_POST['razonSocial'];
+        $nro_identidad = $_POST['nro_identidad'];
+        $razon_social = $_POST['razon_social'];
         $telefono = $_POST['telefono'];
         $correo = $_POST['correo'];
         $departamento = $_POST['departamento'];
