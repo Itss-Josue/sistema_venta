@@ -47,14 +47,9 @@ if ($tipo == "registrar") {
     $categoria = $_POST['categoria'];
     $imagen = 'imagen';
     $proveedor = $_POST['proveedor'];
-    if (
-      $codigo == "" || $nombre == "" || $detalle == "" || $precio == "" || $stock == "" || $categoria == "" || $imagen == "" || $proveedor == ""
-    ) {
+    if ($codigo == "" || $nombre == "" || $detalle == "" || $precio == "" || $stock == "" || $categoria == "" || $imagen == "" || $proveedor == "") {
       // respuesta
-      $arr_Respuesta = array(
-        'status' => false,
-        'mensaje' => 'Error, campos vacios'
-      );
+      $arr_Respuesta = array('status' => false,'mensaje' => 'Error, campos vacios');
     } else {
       //CARGAR ARCHIVO
       $archivo = $_FILES['imagen']['tmp_name'];
@@ -65,9 +60,9 @@ if ($tipo == "registrar") {
       if ($arrProducto->id_n > 0) {
         $newid = $arrProducto->id_n;
         $arr_Respuesta = array('status' => true, 'mensaje' => 'Registro exitoso');
-        $nombre = $arrProducto->id_n . "." . $tipoArchivo;
+        $nombre = $arrProducto->id_n.".".$tipoArchivo;
 
-        if (move_uploaded_file($archivo, $destino . '' . $nombre)) {
+        if (move_uploaded_file($archivo, $destino .''. $nombre)) {
         } else {
           $arr_Respuesta = array('status' => true, 'mensaje' => 'Registro Exitoso, error al subir imagen');
         }

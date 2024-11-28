@@ -62,7 +62,10 @@ nav ul li a {
     text-decoration: none;
 }
 
-
+.footer-top{
+    background-color: #333a3b;
+    color: #000;
+}
 .cm h4{
     color: white;
     padding: 30px;

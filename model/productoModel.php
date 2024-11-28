@@ -26,18 +26,14 @@ class ProductoModel
         $objeto = $respuesta->fetch_object();
         return $objeto;
     }
-    public function registrarProducto(
-        $codigo,$nombre,$detalle,$precio,$stock,$categoria,$imagen,$proveedor,$tipoArchivo
-    ) {
-        $sql = $this->conexion->query("CALL insertproducto('{$codigo}',
-            '{$nombre}','{$detalle}','{$precio}','{$stock}','{$categoria}','{$imagen}','{$proveedor}', '{$tipoArchivo}')");
+    public function registrarProducto($codigo,$nombre,$detalle,$precio,$stock,$categoria,$imagen,$proveedor,$tipoArchivo) {
+        $sql = $this->conexion->query("CALL insertproducto('{$codigo}','{$nombre}','{$detalle}','{$precio}','{$stock}','{$categoria}','{$imagen}','{$proveedor}','{$tipoArchivo}')");
         $sql = $sql->fetch_object();
         return $sql;
     }
     public function actualizar_imagen($id, $imagen){
         $sql = $this->conexion->query("UPDATE producto SET imagen='{$imagen}' WHERE id='{$id}'");
         return 1;
-
     }
     public function verProducto($id){
         $sql = $this->conexion->query("SELECT * FROM producto WHERE id='$id'");
