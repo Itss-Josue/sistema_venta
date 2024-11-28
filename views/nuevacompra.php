@@ -1,4 +1,4 @@
-<form id="frmRegistrarCompra" action="" class="form-control"    >
+<form class="form-control" id="frmRegistrarCompra" action="frmRegistrarCompra">
     <div class="form-group">   
         
     <div class="campo-contenedor">
@@ -20,10 +20,10 @@
             </select>
         </div>
 
-        <button type="button" class="btn btn-success" onclick="registrarCompra();">Registrar</button>
+        <button type="button" class="btn btn-success" onclick="registrarCompras();">Registrar</button>
     </div>
 </form>
 
-<script src="<?php echo BASE_URL;?>views/js/functions_compras.js"></script>
-<script>listarproductos();</script>
-<script>listartrabajadores();</script>
+<script src="<?php echo BASE_URL;?>views/js/functionscompras.js"></script>
+<script>listar_productos();</script>
+<script>listar_trabajadores();</script>

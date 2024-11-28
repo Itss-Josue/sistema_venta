@@ -9,30 +9,31 @@ class ComprasModel
         $this->conexion = $this->conexion->connect();
     }
     public function registrarCompras(
-        $producto,
+        $id_producto,
         $cantidad,
         $precio,
-        $trabajador
-
-    ) {
-        $sql = $this->conexion->query("CALL insertar_compra
-        ('{$producto}', '{$cantidad}', '{$precio}', '{$trabajador}')");
-       
-         if ($sql == false) {
-            print_r(value: $this->conexion->error);
-        }
-
-
+        $trabajador) {
+        $sql = $this->conexion->query("CALL insertarCompras('{$id_producto}','{$cantidad}','{$precio}','{$trabajador}')");
         $sql = $sql->fetch_object();
         return $sql;
     }
     
-    public function obtenerproductos()
+    public function obtener_productos()
     {
         $arrRespuesta = array();
         $respuesta = $this->conexion->query(" SELECT * FROM producto");
         while ($objeto = $respuesta->fetch_object()) {
             array_push($arrRespuesta, $objeto);
+            
+        }
+        return $arrRespuesta;
+    }
+
+    public function obtenerCompras(){
+        $arrRespuesta = array();
+        $respuesta = $this->conexion->query("SELECT * FROM compras");
+        while ($objeto = $respuesta->fetch_object()) {
+            array_push($arrRespuesta,$objeto);
             
         }
         return $arrRespuesta;
