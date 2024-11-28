@@ -19,7 +19,7 @@ async function iniciar_sesion() {
         json = await respuesta.json();
         if (json.status) {
             //swal("Iniciar Sesion", json.mensaje,"success");
-            location.replace(base_url+"nuevo_producto")
+            location.replace(base_url+"inicio")
         }else{
             swal("Iniciar Sesion", json.mensaje,"error");
         }
@@ -33,7 +33,6 @@ async function iniciar_sesion() {
          ;
     }
 }
-
 if (document.querySelector('#frm_iniciar_sesion')) {
         // evita que se envie el formulario
     let frm_iniciar_sesion = document.querySelector('#frm_iniciar_sesion');

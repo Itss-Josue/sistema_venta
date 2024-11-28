@@ -17,7 +17,7 @@ class PersonaModel{
     }
 
     ////////////////////////////
-
+    
 
     public function buscarPersonaPorDNI($nro_identidad){
         $sql = $this->conexion->query("SELECT * FROM persona WHERE nro_identidad='{$nro_identidad}'");
@@ -33,7 +33,6 @@ class PersonaModel{
              }
              return $arrRespuesta;
          }
-
          public function obtener_proveedor(){
             $arrRespuesta = array();
             $respuesta = $this->conexion->query( "SELECT * FROM persona WHERE rol='proveedor'");

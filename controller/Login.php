@@ -12,7 +12,7 @@ if ($tipo=="iniciar_sesion") {
     $arrResponse = array('status'=>false,'msg'=>'');
 
     $arrPersona = $objPersona->buscarPersonaPorDNI($usuario);
-    print_r($arrPersona);
+    //print_r($arrPersona);
     //print_r($arrPersona);
     if (empty($arrPersona)) {
         $arrResponse = array ('status'=>false,'smg'=>'Error, Usuario no esta registrado en el sistema');
