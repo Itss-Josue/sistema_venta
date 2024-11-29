@@ -24,6 +24,6 @@
         <button type="button" class="mb-3 btn btn-outline-info" onclick="registrar_compra();"><i class="bi bi-check-circle"></i>Registrar</button>
     </form>
 </div>
-<script src="<?php echo BASE_URL;?>views/js/functions_compras.js"></script>
+<script src="<?php echo BASE_URL;?>views/js/functionscompra.js"></script>
 <script>listar_productos();</script>
 <script>listar_trabajadores();</script>

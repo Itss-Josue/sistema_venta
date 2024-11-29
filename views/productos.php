@@ -19,7 +19,7 @@
                 <td>Producto</td>
                 <td>10</td>
                 <td>categoria</td>
-                <td>yo</td>
+                <td>mirr</td>
                 <td>
                     <button class="btn btn-sm btn-primary">Editar</button>
                     <button class="btn btn-sm btn-danger">Eliminar</button>
@@ -28,5 +28,4 @@
         </tbody>
     </table>
 </div>
-
 <script src="<?php echo BASE_URL;?>views/js/functionsproducto.js"></script>

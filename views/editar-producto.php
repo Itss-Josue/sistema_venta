@@ -40,12 +40,12 @@
         </select>
     </div>
     <br>
-    <button type="button" class="btn btn-success" onclick="registrarProducto();">Registrar</button>
+    <button type="button" class="btn btn-success" onclick="actualizar_producto();">Registrar</button>
 </form>
 </div>
 <script src="<?php echo BASE_URL;?>views/js/functionsproducto.js"></script>
-<script>listarcategorias();</script>
-<script>listarproveedores();</script>
+<script>listar_categorias();</script>
+<script>listarProveedores();</script>
 <script>
     const id_p=<? $pagina=explode("/", $_GET['views']); echo $pagina['1']; ?>;
     ver_producto(id_p);

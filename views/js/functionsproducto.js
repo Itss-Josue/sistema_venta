@@ -1,6 +1,6 @@
 async function listar_productos() {
     try {
-        let respuesta = await fetch(base_url+'controller/Producto.php?tipo=listar');
+        let respuesta = await fetch(base_url + 'controller/Producto.php?tipo=listar');
         json = await respuesta.json();
         if (json.status) {
             let datos = json.contenido;
@@ -8,7 +8,7 @@ async function listar_productos() {
             datos.forEach(item=>{
                 let nueva_fila = document.createElement("tr");
                 nueva_fila.id = "fila"+item.id;
-                cont++;
+                cont +=1;
                 nueva_fila.innerHTML = `
                         <th>${cont}</th>
                         <td>${item.codigo}</td>
@@ -24,11 +24,12 @@ async function listar_productos() {
         console.log(json);
     } catch (error) {
         console.log("Opps salio un error "+error);
-    }
+    } 
 }
 if (document.querySelector('#tbl_producto')) {
     listar_productos();
 }
+
 
 async function registrarProducto() {
     let codigo = document.getElementById('codigo').value;

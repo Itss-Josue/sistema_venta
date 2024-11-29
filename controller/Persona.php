@@ -1,14 +1,37 @@
 <?php
-
- 
 require_once('../model/personaModel.php');
+
+$tipo = $_REQUEST['tipo'];
 //instanciar la clase categoria model
 $objPersona = new PersonaModel();
 
-$tipo = $_REQUEST['tipo'];
+if ($tipo == "listar_p") {
+    $arr_Respuesta = array('status' => false, 'contenido' => '');
+    $arrPersona = $objPersona->obtenerPersona();
 
+    if (!empty($arrPersona)) {
+        for ($i = 0; $i < count($arrPersona); $i++) {
 
-if ($tipo=="registrar"){
+            $id_persona =  $arrPersona[$i]->id;
+            $nro_identidad =  $arrPersona[$i]->nro_identidad;
+            $razon_social =  $arrPersona[$i]->razon_social;
+            $telefono =  $arrPersona[$i]->telefono;
+            $correo =  $arrPersona[$i]->correo;
+            $departamento =  $arrPersona[$i]->departamento;
+            $cod_postal =  $arrPersona[$i]->cod_postal;
+            $direccion =  $arrPersona[$i]->direccion;
+            $rol =  $arrPersona[$i]->rol;
+
+            $opciones = '';
+            $arrPersona[$i]->options = $opciones;
+        }
+        $arr_Respuesta['status'] = true;
+        $arr_Respuesta['contenido'] =  $arrPersona;
+    }
+    echo json_encode($arr_Respuesta); //convertir en formato -- 
+}
+
+if ($tipo == "registrar"){
     //print_r($_POST);
     if ($_POST) {
         $nro_identidad = $_POST['nro_identidad'];

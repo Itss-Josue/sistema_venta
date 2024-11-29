@@ -14,7 +14,7 @@ if ($tipo == "listar") {
   $arrProducto = $objProducto->obtenerProductos();
 
 
-  if (!empty($arrProductos)) { // recorremos el array para agregar las opciones de las categorias.
+  if (!empty($arrProducto)) { // recorremos el array para agregar las opciones de las categorias.
     for ($i = 0; $i < count($arrProducto); $i++) {
       $id_categoria = $arrProducto[$i]->id_categoria;
       $r_categoria = $objCategoria->obtener_categoria_id($id_categoria);
@@ -24,14 +24,14 @@ if ($tipo == "listar") {
       $r_proveedor = $objPersona->obtener_proveedor_id($id_proveedor);
       $arrProducto[$i]->proveedor = $r_proveedor;
 
-      $id_producto = $arr_Productos[$i]->id;
-      $producto = $arr_Productos[$i]->nombre;
+      $id_producto = $arrProducto[$i]->id;
+      $producto = $arrProducto[$i]->nombre;
       // localhost/editar-producto/4                                                                 // eliminar producto(1)
       $opciones = '<a href="' . BASE_URL . 'editar-producto/' . $id_producto . '" >Editar</a><button onclick="eliminar_producto(' . $id_producto . ')" >Eliminar</button>';
-      $arr_Productos[$i]->options = $opciones;
+      $arrProducto[$i]->options = $opciones;
     }
     $arr_Respuesta['status'] = true;
-    $arr_Respuesta['contenido'] = $arr_Productos;
+    $arr_Respuesta['contenido'] = $arrProducto;
   }
   echo json_encode($arr_Respuesta);
 }
