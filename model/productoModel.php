@@ -33,6 +33,7 @@ class ProductoModel
     }
     public function actualizar_imagen($id, $imagen){
         $sql = $this->conexion->query("UPDATE producto SET imagen='{$imagen}' WHERE id='{$id}'");
+        $sql = $sql->fetch_object();
         return 1;
     }
     public function verProducto($id){

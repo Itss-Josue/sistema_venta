@@ -39,8 +39,7 @@ async function registrarProducto() {
     let categoria = document.querySelector('#categoria').value;
     let img = document.querySelector('#imagen').value;
     let proveedor = document.querySelector('#proveedor').value;
-    if (codigo=="" || nombre =="" || detalle=="" || precio =="" || stock ==""
-        || categoria =="" ||  img =="" || proveedor =="") {
+    if (codigo=="" || nombre =="" || detalle=="" || precio =="" || stock =="" || categoria =="" ||  img =="" || proveedor =="") {
             alert("Error!!, Campos vacíos");
             return;
     }
