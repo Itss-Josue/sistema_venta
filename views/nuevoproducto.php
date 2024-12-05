@@ -1,8 +1,7 @@
 
 <div class="fo1">
-<h1 class="text-center mb-4 ">Nuevo producto</h1>
 <form class="form1" action="" id="formRegistrarProd">
-    
+<h1 class="text-center mb-4 ">Nuevo producto</h1>
     <div>
         <label for="codigo">Código:</label>
         <input type="text" name="codigo" id="codigo"  placeholder="Codigo" class="form-control" required>

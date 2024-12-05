@@ -118,6 +118,8 @@ async function listarproveedores() {
         console.log("Error al cargar proveedor" + e)
     }
 }
+
+
 async function ver_producto(id) {
     const formData = new FormData();
     formData.append('id_producto', id);
@@ -131,13 +133,35 @@ async function ver_producto(id) {
         json = await respuesta.json();
         if (json.status) {
             document.querySelector('#codigo').value = json.contenido.codigo;
+            document.querySelector('#nombre').value = json.contenido.nombre;
+            document.querySelector('#detalle').value = json.contenido.detalle;
+            document.querySelector('#precio').value = json.contenido.precio;
+            document.querySelector('#categoria').value = json.contenido.categoria;
+            document.querySelector('#imagen').value = json.contenido.imagen;
+            document.querySelector('#proveedor').value = json.contenido.id_proveedor;
         }else{
             window.location = base_url+"productos";
         }   
-
         console.log(json);
     } catch (error) {
         console.log("Oops ocurrio un error" +error);
+    }
+}
+
+//actualizar producto
+async function actualizar_producto() {
+    const datos = new FormData(formActualizar);
+    try {  
+        let respuesta = await fetch(base_url + 'controller/Producto.php?tipo=actualizar', {
+            method: 'POST',
+            mode: 'cors',
+            cache: 'no-cache',
+            body: datos
+        });
+        json = await respuesta.json();
+        console.log(json);
+    } catch (e) {
+         
     }
 }
 

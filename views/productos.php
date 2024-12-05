@@ -14,18 +14,10 @@
         </thead>
         <tbody id="tbl_producto">
             <tr>
-                <td>1</td>
-                <td>12345</td>
-                <td>Producto</td>
-                <td>10</td>
-                <td>categoria</td>
-                <td>mirr</td>
-                <td>
-                    <button class="btn btn-sm btn-primary">Editar</button>
-                    <button class="btn btn-sm btn-danger">Eliminar</button>
-                </td>
+                
             </tr>
         </tbody>
     </table>
 </div>
+
 <script src="<?php echo BASE_URL;?>views/js/functionsproducto.js"></script>
