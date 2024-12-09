@@ -1,6 +1,10 @@
 
-<div class="table-responsive">
-    <table class="table table-striped table-bordered">
+<h1 style="margin-top:5%; margin-left:5%;" >Tabla de productos</h1>
+<a style="margin-left:5%;" href="<?php BASE_URL;?>PanelAdministrador" class="btn btn-outline-secondary">
+                    <i class="bi bi-arrow-left-circle"></i> Regresar
+                </a>
+<div style="padding:5%;" class="table-responsive">
+    <table class="table table-striped table-bordered table-hover">
         <thead class="table-dark">
             <tr>
                 <th scope="col">Nro</th>

@@ -17,6 +17,7 @@ async function listar_productos() {
                         <td>${item.categoria.nombre}</td>
                         <td>${item.proveedor.nombre}</td>
                         <td>${item.options}</td>
+                        
                         `;
                 document.querySelector('#tbl_producto').appendChild(nueva_fila);
             });
@@ -73,8 +74,7 @@ async function registrarProducto() {
 async function listarcategorias() {
     try {
         // envia datos hacia el controlador
-        let respuesta = await fetch(base_url +
-            'controller/Categoria.php?tipo=listar');
+        let respuesta = await fetch(base_url + 'controller/Categoria.php?tipo=listar');
         json = await respuesta.json();
         if (json.status) {
             let datos = json.contenido;

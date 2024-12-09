@@ -93,8 +93,9 @@ if ($tipo == "actualizar") {
     $detalle = $_POST['detalle'];
     $precio = $_POST['precio'];
     $categoria = $_POST['categoria'];
+    $imagen = $_FILES['imagen'];
     $proveedor = $_POST['proveedor'];
-    if ($nombre == "" || $detalle == "" || $precio == "" ||  $categoria == "" ||  $proveedor == "") {
+    if ($id_producto == "" || $img == "" || $nombre == "" || $detalle == "" || $precio == "" ||  $categoria == "" || $imagen == "" || $proveedor == "") {
       // respuesta
       $arr_Respuesta = array('status' => false, 'mensaje' => 'Error, campos vacios');
     } else {
@@ -117,4 +118,18 @@ if ($tipo == "actualizar") {
     }
   }
   echo json_encode($arr_Respuesta);
+}
+
+
+if ($tipo == 'eliminar') {
+  /* print_r($_POST); */
+  $id_producto = $_POST['id_producto'];
+  $arr_Respuesta = $objProducto->eliminar_producto($id_producto);
+ if (empty($arr_Respuesta)) {
+    $response = array('status' => false, 'mensaje'=> "error, no informacion");
+ }else {
+  $response = array('status' => true, 'mensaje'=> "Elimnado exitosamente");
+ }
+ echo json_encode($response);
+
 }
