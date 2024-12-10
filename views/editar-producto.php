@@ -1,8 +1,8 @@
 <div class="fo1">
 
     <form class="form1" action="" id="formActualizar">
-        <input type="hidden" name="id_producto" id="id_producto">
-        <input type="hidden" name="img" id="img">
+    <input type="hidden" name="id_producto" id="id_producto">
+    <input type="hidden" name="img" id="img">
         <h1 class="text-center mb-4 ">Editar producto</h1>
         <div>
             <label for="codigo">Código:</label>
@@ -45,12 +45,8 @@
     </form>
 </div>
 <script src="<?php echo BASE_URL; ?>views/js/functionsproducto.js"></script>
-<script>
-    listarcategorias();
-</script>
-<script>
-    listarproveedores();
-</script>
+<script>listarcategorias();</script>
+<script>listarproveedores();</script>
 
 <script>
     const id_p = <?php $pagina = explode("/", $_GET['views']);

@@ -23,5 +23,4 @@
         </tbody>
     </table>
 </div>
-
 <script src="<?php echo BASE_URL;?>views/js/functionsproducto.js"></script>

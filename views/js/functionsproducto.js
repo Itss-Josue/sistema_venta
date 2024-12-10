@@ -121,6 +121,7 @@ async function listarproveedores() {
 
 
 async function ver_producto(id) {
+    //console.log('hola soy la funcion ver');
     const formData = new FormData();
     formData.append('id_producto', id);
     try {
@@ -132,19 +133,20 @@ async function ver_producto(id) {
         });
         json = await respuesta.json();
         if (json.status) {
+            document.querySelector('#id_producto').value = json.contenido.id;
             document.querySelector('#codigo').value = json.contenido.codigo;
             document.querySelector('#nombre').value = json.contenido.nombre;
             document.querySelector('#detalle').value = json.contenido.detalle;
             document.querySelector('#precio').value = json.contenido.precio;
-            document.querySelector('#categoria').value = json.contenido.categoria;
-            document.querySelector('#imagen').value = json.contenido.imagen;
+            document.querySelector('#categoria').value = json.contenido.id_categoria;
             document.querySelector('#proveedor').value = json.contenido.id_proveedor;
-        }else{
-            window.location = base_url+"productos";
-        }   
+            document.querySelector('#img').value = json.contenido.imagen;
+        } else {
+            window.location = base_url + "productos";
+        }
         console.log(json);
     } catch (error) {
-        console.log("Oops ocurrio un error" +error);
+        console.log("oops ocurrio un error " + error);
     }
 }
 
@@ -160,8 +162,42 @@ async function actualizar_producto() {
         });
         json = await respuesta.json();
         console.log(json);
-    } catch (e) {
-         
+    } catch (error) {
+        console.log("ocurrio error" +error)
     }
 }
 
+async function eliminar_producto(id){
+    swal({
+        title: "¿Realmente desea Eliminar el Producto?",
+        text: "",
+        icon: "warning",
+        buttons: true,
+        dangerMode: true
+    }).then((willDelete)=>{
+        if (willDelete) {
+            fnt_eliminar(id);
+        }
+    })
+}
+async function fnt_eliminar(id){
+    const formData = new FormData();
+    formData.append('id_producto', id);
+    try {
+        let respuesta = await fetch(base_url + 'controller/Producto.php?tipo=eliminar',{
+            method: 'POST',
+            mode: 'cors',
+            cache: 'no-cache',
+            body: formData
+        });
+        json = await respuesta.json();
+        if (json.status) {
+            swal("Eliminar", "Eliminado Correctamente", "success");
+            document.querySelector('#fila'+id).remove();
+        }else{
+            swal("Eliminar", "Error al eliminar Producto", "warning")
+        }
+    } catch (e) {
+        console.log("ocurrio error"+e)
+    }
+}

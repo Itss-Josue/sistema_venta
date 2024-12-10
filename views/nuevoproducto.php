@@ -1,7 +1,7 @@
 
 <div class="fo1">
 <form class="form1" action="" id="formRegistrarProd">
-<h1 class="text-center mb-4 ">Nuevo producto</h1>
+<h3 class="text-center mb-4 ">Registrar Nuevo producto</h3>
     <div>
         <label for="codigo">Código:</label>
         <input type="text" name="codigo" id="codigo"  placeholder="Codigo" class="form-control" required>
@@ -63,17 +63,6 @@
     animation: fadeIn 0.8s ease-in-out;
 }
 
-
-
-/* Estilo del encabezado */
-.form1 h1 {
-    color: #4e54c8;
-    font-size: 2rem;
-    margin-bottom: 20px;
-    font-weight: bold;
-    text-align: center;
-}
-
 /* Estilo de entradas y selects */
 .form1 input,
 .form1 select {
@@ -97,15 +86,6 @@
 
 .form1 .btn:hover {
     background: #3a41a8;
-}
-
-/* Mensaje de error o éxito */
-.feedback {
-    display: none;
-    padding: 10px;
-    margin-top: 10px;
-    border-radius: 5px;
-    font-size: 0.9rem;
 }
 
 .feedback.success {
