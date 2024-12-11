@@ -21,10 +21,6 @@
             <input type="number" name="precio" id="precio" placeholder="Precio" class="form-control" required>
         </div>
         <div>
-            <label for="stock">Stock:</label>
-            <input type="number" name="stock" id="stock" placeholder="Stock" class="form-control" required>
-        </div>
-        <div>
             <label for="categoria">Categoría:</label>
             <select name="categoria" id="categoria" class="form-control" required>
                 <option>Seleccione</option>

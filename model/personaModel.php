@@ -34,8 +34,8 @@ class PersonaModel{
     }
 
     public function obtener_proveedor_id($id){
-        $respuesta = $this->conexion->query("SELECT *FROM persona WHERE id='{$id}'");
-        $objeto = $respuesta->fetch_object();
+        $objeto = $this->conexion->query("SELECT * FROM persona WHERE id = '{$id}'");
+        $objeto = $objeto->fetch_object();
         return $objeto;
     }
     public function obtener_trabajador(){

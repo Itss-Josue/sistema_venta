@@ -19,10 +19,7 @@ async function listar_personas() {
                 <td>${item.cod_postal}</td>
                 <td>${item.direccion}</td>
                 <td>${item.rol}</td>
-                <td>
-                    <button class="btn btn-primary btn-sm"><i class="fas fa-edit"></i></button>
-                    <button class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></button>
-                </td>
+                <td>${item.options}</td>
         `;
         document.querySelector('#tbl_persona').appendChild(nueva_fila);
             });
@@ -90,4 +87,57 @@ async function registrarUsuario() {
         console.log("Oops, ocurrió un error: " + e);
     }
     
+}
+
+
+//actualizar producto
+async function actualizar_persona() {
+    const datos = new FormData(formActualizar);
+    try {  
+        let respuesta = await fetch(base_url + 'controller/Persona.php?tipo=actualizar', {
+            method: 'POST',
+            mode: 'cors',
+            cache: 'no-cache',
+            body: datos
+        });
+        json = await respuesta.json();
+        console.log(json);
+    } catch (error) {
+        console.log("ocurrio error" +error)
+    }
+}
+
+async function eliminar_producto(id){
+    swal({
+        title: "¿Realmente desea Eliminar el Producto?",
+        text: "",
+        icon: "warning",
+        buttons: true,
+        dangerMode: true
+    }).then((willDelete)=>{
+        if (willDelete) {
+            fnt_eliminar(id);
+        }
+    })
+}
+async function fnt_eliminar(id){
+    const formData = new FormData();
+    formData.append('id_producto', id);
+    try {
+        let respuesta = await fetch(base_url + 'controller/Producto.php?tipo=eliminar',{
+            method: 'POST',
+            mode: 'cors',
+            cache: 'no-cache',
+            body: formData
+        });
+        json = await respuesta.json();
+        if (json.status) {
+            swal("Eliminar", "Eliminado Correctamente", "success");
+            document.querySelector('#fila'+id).remove();
+        }else{
+            swal("Eliminar", "Error al eliminar Producto", "warning")
+        }
+    } catch (e) {
+        console.log("ocurrio error"+e)
+    }
 }

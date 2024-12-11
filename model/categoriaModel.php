@@ -27,9 +27,9 @@ class CategoriaModel
         return $sql;
     }
     public function obtener_categoria_id($id){
-        $respuesta = $this->conexion->query("SELECT * FROM  categoria where id='{$id}'");
-        $objeto = $respuesta->fetch_object();
-        return $respuesta;
+        $objeto = $this->conexion->query("SELECT * FROM  categoria where id='{$id}'");
+        $objeto = $objeto->fetch_object();
+        return $objeto;
     }
     
 }

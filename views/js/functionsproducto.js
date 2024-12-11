@@ -15,9 +15,8 @@ async function listar_productos() {
                         <td>${item.nombre}</td>
                         <td>${item.stock}</td>
                         <td>${item.categoria.nombre}</td>
-                        <td>${item.proveedor.nombre}</td>
+                        <td>${item.proveedor.razon_social}</td>
                         <td>${item.options}</td>
-                        
                         `;
                 document.querySelector('#tbl_producto').appendChild(nueva_fila);
             });

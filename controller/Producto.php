@@ -13,6 +13,7 @@ if ($tipo == "listar") {
   $arrProducto = $objProducto->obtenerProductos();
   if (!empty($arrProducto)) { // recorremos el array para agregar las opciones de las categorias.
     for ($i = 0; $i < count($arrProducto); $i++) {
+
       $id_categoria = $arrProducto[$i]->id_categoria;
       $r_categoria = $objCategoria->obtener_categoria_id($id_categoria);
       $arrProducto[$i]->categoria = $r_categoria;
@@ -24,8 +25,8 @@ if ($tipo == "listar") {
       $id_producto = $arrProducto[$i]->id;
       $producto = $arrProducto[$i]->nombre;
       // localhost/editar-producto/4                                                                 // eliminar producto(1)
-      $opciones = '<a href=" ' . BASE_URL . 'editar-producto/' . $id_producto . '"><button class="btn btn-primary btn-sm">Editar<i class="fas fa-edit"></i></button></a>
-                    <button class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"  onclick="eliminar_producto(' . $id_producto . ');"></i>Eliminar</button>';
+      $opciones = '<a class="btn btn-primary btn-sm" href=" ' . BASE_URL . 'editar-producto/' . $id_producto . '">Editar<i class="fas fa-edit"></i></a>
+                    <button class="btn btn-danger btn-sm" onclick="eliminar_producto('. $id_producto .');"<i class="fas fa-trash-alt"></i>Eliminar</button>';
       $arrProducto[$i]->options = $opciones;
     }
     $arr_Respuesta['status'] = true;
@@ -101,7 +102,7 @@ if ($tipo == "actualizar") {
       //repuesta
       $arr_Respuesta = array('status' => false, 'mensaje' => 'Error, campos vacíos');
   } else {
-      $arrProducto = $objProducto->actualizarProducto($id_producto, $nombre, $detalle, $precio, $categoria, $proveedor, $tipo_archivo);
+      $arrProducto = $objProducto->actualizarProducto($id_producto, $nombre, $detalle, $precio, $categoria, $proveedor);
       if ($arrProducto->p_id > 0) {
           $arr_Respuesta = array('status' => true, 'mensaje' => 'Actualizado Correctamente');
 
