@@ -62,5 +62,47 @@ class PersonaModel{
         }
         return $arrRespuesta;
     }
-}
+    ///////////////////////////////////////////////////
 
+
+
+    public function verPersonas($id) {
+        $sql = $this->conexion->query("SELECT * FROM persona WHERE id = '$id'");
+        $sql = $sql->fetch_object();
+        return $sql;
+    }
+    
+    public function actualizarPersona(
+        $id,
+        $nro_identidad,
+        $razon_social,
+        $telefono,
+        $correo,
+        $departamento,
+        $provincia,
+        $distrito,
+        $cod_postal,
+        $direccion,
+        $rol,
+    ) {
+        $sql = $this->conexion->query("CALL actualizarpersona(
+            '{$id}', '{$nro_identidad}', '{$razon_social}', '{$telefono}', '{$correo}',
+            '{$departamento}', '{$provincia}', '{$distrito}', '{$cod_postal}', '{$direccion}', '{$rol}')");
+
+        if (!$sql) {
+            die("Error en la consulta: " . $this->conexion->error);
+        }
+
+        return $sql;
+    }
+
+    public function eliminarPersona($id)
+    {
+        $sql = $this->conexion->query("CALL eliminar_persona('{$id}')");
+        if (!$sql) {
+            die("Error en la consulta: " . $this->conexion->error);
+        }
+
+        return $sql;
+    }
+}
