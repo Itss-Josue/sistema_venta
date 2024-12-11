@@ -32,8 +32,10 @@
                 </a>
                 <a onclick="cerrar_sesion();">Cerrar sesion</a>
                 
-
             </div>
+            <a style="margin-left:5%;" href="<?php BASE_URL;?>PanelAdministrador" class="btn btn-outline-primary">
+                    <i class="bi bi-arrow-left-circle"></i> Panel de Administrador
+                </a>
         </div>
         <nav style="background: black;" class="navbar navbar-expand-lg ">
             <div class="container-fluid row d-block">
