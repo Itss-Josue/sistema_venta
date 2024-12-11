@@ -70,9 +70,9 @@
 
             <!-- Botones -->
             <div class="d-flex justify-content-between">
-                <a href="<?php BASE_URL;?>PanelAdministrador" class="btn btn-outline-secondary">
-                    <i class="bi bi-arrow-left-circle"></i> Regresar
-                </a>
+            <button class="btn btn-secondary" onclick="window.history.back();">
+        <i class="bi bi-arrow-left-circle me-1"></i> Volver Atrás
+    </button>
                 <button type="button" class="btn btn-outline-primary" onclick="actualizar_persona();">
                     <i class="bi bi-check-circle"></i> Actualizar
                 </button>

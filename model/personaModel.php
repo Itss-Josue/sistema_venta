@@ -95,14 +95,9 @@ class PersonaModel{
 
         return $sql;
     }
-
-    public function eliminarPersona($id)
-    {
-        $sql = $this->conexion->query("CALL eliminar_persona('{$id}')");
-        if (!$sql) {
-            die("Error en la consulta: " . $this->conexion->error);
-        }
-
+    public function eliminarPersona($id){
+        $sql = $this->conexion->query("CALL eliminarpersona('{$id}')");
+        $sql = $sql->fetch_object();
         return $sql;
     }
 }

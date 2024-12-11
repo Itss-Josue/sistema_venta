@@ -24,7 +24,7 @@ async function listar_personas() {
         document.querySelector('#tbl_persona').appendChild(nueva_fila);
             });
         }else{
-            Swal.fire("No se encontraron productos.");
+            Swal.fire("No se encontraron personas.");
         }
         console.log(json);
     } catch (error) {
@@ -146,26 +146,41 @@ async function actualizar_persona() {
         console.error("Oops, ocurrió un error: " + e);
     }
 }
-async function eliminar_persona(id) {
+
+
+async function eliminar_persona(id){
+    swal({
+        title: "¿Realmente desea Eliminar el Usuario?",
+        text: "",
+        icon: "warning",
+        buttons: true,
+        dangerMode: true
+    }).then((willDelete)=>{
+        if (willDelete) {
+            fnt_eliminar_p(id);
+        }
+    })
+}
+
+
+async function fnt_eliminar_p(id){
     const formData = new FormData();
     formData.append('id_persona', id);
-
     try {
-        let respuesta = await fetch(base_url + 'controller/Persona.php?tipo=eliminar_persona', {
+        let respuesta = await fetch(base_url + 'controller/Persona.php?tipo=eliminar',{
             method: 'POST',
             mode: 'cors',
             cache: 'no-cache',
             body: formData
         });
-        let json = await respuesta.json();
+        json = await respuesta.json();
         if (json.status) {
-            swal.fire("Eliminación exitosa", json.mensaje, 'success');
-            document.querySelector(`#fila${id}`).remove();
-        } else {
-            swal.fire("Eliminación fallida", json.mensaje, 'error');
+            swal("Eliminar", "Eliminado Correctamente", "success");
+            document.querySelector('#fila'+id).remove();
+        }else{
+            swal("Eliminar", "Error al eliminar Usuario", "warning")
         }
-        console.log(json);
-    } catch (error) {
-        console.error("Error al eliminar persona: " + error);
+    } catch (e) {
+        console.log("ocurrio error"+e)
     }
 }

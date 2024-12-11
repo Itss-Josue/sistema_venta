@@ -21,8 +21,8 @@ if ($tipo == "listar_p") {
             $cod_postal =  $arrPersona[$i]->cod_postal;
             $direccion =  $arrPersona[$i]->direccion;
             $rol =  $arrPersona[$i]->rol;
-            $opciones = '<a href="' . BASE_URL . 'editarPersona/' . $id_persona . '" class="btn btn-success"><i class="fa fa-pencil"> </i> </a>
-            <button onclick="eliminar_persona(' . $id_persona . ');" class="btn btn-danger"><i class="fa fa-trash"></i></button>';
+            $opciones = '<a class="btn btn-primary btn-sm" href=" ' . BASE_URL . 'editarPersona/' . $id_persona . '">Editar<i class="fas fa-edit"></i></a>
+                    <button class="btn btn-danger btn-sm" onclick="eliminar_persona('. $id_persona .');"<i class="fas fa-trash-alt"></i>Eliminar</button>';
             $arrPersona[$i]->options = $opciones;
         }
         $arr_Respuesta['status'] = true;
@@ -161,16 +161,15 @@ if ($tipo == "actualizar_persona") {
     }
 }
 
-if ($tipo == "eliminar_persona") {
-    if ($_POST) {
+if ($tipo == "eliminar") {
         $id_persona = $_POST['id_persona'];
         $arrPersona = $objPersona->eliminarPersona($id_persona);
 
-        if ($arrPersona) {
-            $arr_Respuesta = array('status' => true, 'mensaje' => 'Eliminación Exitosa');
-        } else {
-            $arr_Respuesta = array('status' => false, 'mensaje' => 'Error, inténtelo de nuevo');
-        }
-        echo json_encode($arr_Respuesta);
+        if (empty($arr_Respuesta)) {
+            $response = array('status' => false);
+         }else {
+          $response = array('status' => true);
+         }
+         echo json_encode($response);
+        
     }
-}

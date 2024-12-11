@@ -1,6 +1,6 @@
 <div class="fo1">
 <form class="form1" action="" id="formRegistrarCat" style="width: 100%;">
-    <h1 class="text-center mb-4">Registrar Nueva Categoria</h1>
+    <h1 class="text-center mb-4">Editar Categoria</h1>
     
     <div class="form-group">
         <label for="nombre">Nombre:</label>
@@ -13,9 +13,9 @@
     </div>
 
     <div class="d-flex justify-content-between">
-        <a href="<?php BASE_URL;?>PanelAdministrador" class="btn btn-outline-secondary">
-            <i class="bi bi-arrow-left-circle"></i> Regresar
-        </a>
+    <button class="btn btn-secondary" onclick="window.history.back();">
+        <i class="bi bi-arrow-left-circle me-1"></i> Volver Atrás
+    </button>
         <button type="button" class="btn btn-outline-primary" onclick="registrarCategoria();">
             <i class="bi bi-check-circle"></i> Registrar
         </button>
@@ -24,6 +24,7 @@
 
 </div>
 <style>
+    
 
 /* Styling for the form container */
 .form1 {
@@ -129,6 +130,11 @@ label {
 }
 
 </style>
+<script>
+    const id_p = <?php $pagina = explode("/", $_GET['views']);
+                    echo $pagina['1']; ?>;
+    ver_categoria(id_p);
+</script>
 <script src="<?php echo BASE_URL;?>views/js/functionscategoria.js"></script>
-<script>listarcategorias();</script>
-<script>listarproveedores();</script>
+<script>listar_categorias();</script>
+<script>listar_proveedores();</script>

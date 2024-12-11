@@ -1,40 +1,4 @@
 
-<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="1000">
-            <img style="width: 70%; margin-left: 300px;"
-                src="https://d13xymm0hzzbsd.cloudfront.net/1/20240707/17203643472453.webp" class="d-block "
-                alt="...">
-        </div>
-        <div class="carousel-item" data-bs-interval="2000">
-            <img style="width: 70%; margin-left: 300px;"
-                src="https://d13xymm0hzzbsd.cloudfront.net/1/20240707/17203643488514.webp" class="d-block "
-                alt="...">
-        </div>
-        <div class="carousel-item" data-bs-interval="2000">
-            <img style="width: 70%; margin-left: 300px;"
-                src="https://d13xymm0hzzbsd.cloudfront.net/1/20240707/17203643481737.webp" class="d-block "
-                alt="...">
-        </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
-</div>
-<br>
-<div class="img.1 d-flex">
-    <img src="https://d13xymm0hzzbsd.cloudfront.net/1/20240103/17043014026336.webp" alt="" width="25%"
-        height="300px">
-    <img style="border-radius: 25px;" src="https://d13xymm0hzzbsd.cloudfront.net/1/20240506/17150270130896.webp"
-        alt="" width="75%" height="300px">
-</div>
 <div class="card2" style="margin: 5% 5% 0% 5%;">
     <div class="container">
         <div class="row" style="padding: 5%;">
