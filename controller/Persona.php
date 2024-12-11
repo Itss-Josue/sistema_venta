@@ -22,7 +22,8 @@ if ($tipo == "listar_p") {
             $direccion =  $arrPersona[$i]->direccion;
             $rol =  $arrPersona[$i]->rol;
 
-            $opciones = '';
+            $opciones = '<a href=" ' . BASE_URL . 'editar-persona/' . $id_persona . '"><button class="btn btn-primary btn-sm">Editar<i class="fas fa-edit"></i></button></a>
+                    <button class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"  onclick="eliminarpersona(' . $id_persona . ');"></i>Eliminar</button>';
             $arrPersona[$i]->options = $opciones;
         }
         $arr_Respuesta['status'] = true;

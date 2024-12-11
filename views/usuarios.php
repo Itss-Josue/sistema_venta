@@ -61,16 +61,6 @@ tbody tr:hover {
     gap: 10px;
 }
 
-/* Botones de Acciones */
-.action-btn {
-    border: none;
-    border-radius: 5px;
-    padding: 5px 10px;
-    color: #fff;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
 .action-btn:hover {
     transform: scale(1.05);
 }
