@@ -1,28 +1,3 @@
-<div class="fo1">
-<form class="form1" action="" id="formRegistrarCat" style="width: 100%;">
-    <h1 class="text-center mb-4">Registrar Nueva Categoria</h1>
-    
-    <div class="form-group">
-        <label for="nombre">Nombre:</label>
-        <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="form-control" required>
-    </div>
-
-    <div class="form-group">
-        <label for="detalle">Detalle:</label>
-        <input type="text" name="detalle" id="detalle" placeholder="Detalle" class="form-control" required>
-    </div>
-
-    <div class="d-flex justify-content-between">
-        <a href="<?php BASE_URL;?>PanelAdministrador" class="btn btn-outline-secondary">
-            <i class="bi bi-arrow-left-circle"></i> Regresar
-        </a>
-        <button type="button" class="btn btn-outline-primary" onclick="registrarCategoria();">
-            <i class="bi bi-check-circle"></i> Registrar
-        </button>
-    </div>
-</form>
-
-</div>
 <style>
 
 /* Styling for the form container */
@@ -129,6 +104,31 @@ label {
 }
 
 </style>
-<script src="<?php echo BASE_URL;?>views/js/functionscategoria.js"></script>
+<div class="fo1">
+<form class="form1" action="" id="formRegistrarCat" style="width: 100%;">
+    <h1 class="text-center mb-4">Registrar Nueva Categoria</h1>
+    
+    <div class="form-group">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="form-control" required>
+    </div>
+
+    <div class="form-group">
+        <label for="detalle">Detalle:</label>
+        <input type="text" name="detalle" id="detalle" placeholder="Detalle" class="form-control" required>
+    </div>
+
+    <div class="d-flex justify-content-between">
+        <a href="<?php BASE_URL;?>PanelAdministrador" class="btn btn-outline-secondary">
+            <i class="bi bi-arrow-left-circle"></i> Regresar
+        </a>
+        <button type="button" class="btn btn-outline-primary" onclick="registrarCategoria();">
+            <i class="bi bi-check-circle"></i> Registrar
+        </button>
+    </div>
+</form>
+
+</div>
+<script src="<?php  BASE_URL?>views/js/functionscategoria.js"></script>
 <script>listarcategorias();</script>
 <script>listarproveedores();</script>

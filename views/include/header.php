@@ -146,7 +146,7 @@ body {
 <body>
 <header>
     <div class="header-container">
-        <a href="<?php echo BASE_URL ?>inicio" class="logo-link">
+        <a href="<?php  BASE_URL ?>inicio" class="logo-link">
             <img src="./views/plantilla/img/logorojo.png" alt="Logo" class="logo">
         </a>
         <div class="search-container">
