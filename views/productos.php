@@ -25,4 +25,4 @@
     </button>
 </div>
 
-<script src="<?php echo BASE_URL;?>views/js/functionsproducto.js"></script>
+<script src="<?php BASE_URL?>views/js/functionsproducto.js"></script>
