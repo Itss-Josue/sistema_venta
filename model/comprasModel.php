@@ -8,7 +8,7 @@ class ComprasModel
         $this->conexion = new Conexion();
         $this->conexion = $this->conexion->connect();
     }
-    public function registrarCompras($id_producto, $cantidad, $precio, $trabajador)
+    public function registrar_compra($id_producto, $cantidad, $precio, $trabajador)
     {
         $sql = $this->conexion->query("CALL insertcompras('{$id_producto}','{$cantidad}','{$precio}','{$trabajador}')");
         $sql = $sql->fetch_object();
@@ -41,7 +41,7 @@ class ComprasModel
         return $sql;
      }
      public function actualizarcompras($id, $id_producto, $cantidad, $precio, $id_trabajador){
-        $sql = $this->conexion->query("CALL actualizarCompras('{$id}','{$id_producto }','{$cantidad}','{$precio}','{$id_trabajador}')");
+        $sql = $this->conexion->query("CALL actualizarcompras('{$id}','{$id_producto }','{$cantidad}','{$precio}','{$id_trabajador}')");
         $sql = $sql->fetch_object();
         return $sql;
     }

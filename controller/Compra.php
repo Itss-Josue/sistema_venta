@@ -49,7 +49,7 @@ if ($tipo == "registrar") {
             $id_producto == "" || $cantidad == "" || $precio == "" || $trabajador == "") {
             $arr_Respuesta = array('status' => false, 'mensaje' => 'Error, campos vacios');
         } else {
-            $arrProducto = $objCompras->registrarCompras($id_producto, $cantidad, $precio, $trabajador);
+            $arrProducto = $objCompras->registrar_compra($id_producto, $cantidad, $precio, $trabajador);
             if ($arrProducto->id>0) {
             $arr_Respuesta = array('status'=>true, 'mensaje'=>'Registro exitoso');
         }else{
@@ -68,7 +68,7 @@ if($tipo == "ver") {
     $arr_Respuesta = $objCompras->verCompras($id_compra);
    // print_r($arr_Respuesta);
    if (empty($arr_Respuesta)) {
-       $response = array('status' => false, 'mensaje' => "ErroR¡¡ no hay informacion");
+       $response = array('status' => false, 'mensaje' => "Error, no hay informacion ");
    }else{
     $response = array('status' => true, 'mensaje'=>"datos encontrados", 'contenido' => $arr_Respuesta);
    }

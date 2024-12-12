@@ -61,7 +61,7 @@ if($tipo == "ver") {
     $arr_Respuesta = $objCategoria->verCategoria($id_categoria);
    // print_r($arr_Respuesta);
    if (empty($arr_Respuesta)) {
-       $response = array('status' => false, 'mensaje' => "ErroR¡¡ no hay informacion");
+       $response = array('status' => false, 'mensaje' => "Error, no hay informacion");
    }else{
     $response = array('status' => true, 'mensaje'=>"datos encontrados", 'contenido' => $arr_Respuesta);
    }
