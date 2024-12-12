@@ -146,7 +146,7 @@ body {
 <body>
 <header>
     <div class="header-container">
-        <a href="<?php  BASE_URL ?>inicio" class="logo-link">
+        <a href="<?php echo BASE_URL ?>inicio" class="logo-link">
             <img src="./views/plantilla/img/logorojo.png" alt="Logo" class="logo">
         </a>
         <div class="search-container">
@@ -166,7 +166,7 @@ body {
             </a>
             <a onclick="cerrar_sesion();" class="logout-link">Cerrar sesión</a>
         </div>
-        <a href="<?php BASE_URL ?>PanelAdministrador" class="admin-link">
+        <a href="<?php  BASE_URL ?>PanelAdministrador" class="admin-link">
             <i class="bi bi-arrow-left-circle"></i> Panel de Administrador
         </a>
     </div>

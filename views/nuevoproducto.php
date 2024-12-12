@@ -99,6 +99,6 @@
 }
 </style>
 
-<script src="<?php  BASE_URL?>views/js/functionsproducto.js"></script>
+<script src="<?php echo BASE_URL;?>views/js/functionsproducto.js"></script>
 <script>listarcategorias();</script>
 <script>listarproveedores();</script>

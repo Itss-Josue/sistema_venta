@@ -129,6 +129,6 @@ label {
 </form>
 
 </div>
-<script src="<?php  BASE_URL?>views/js/functionscategoria.js"></script>
+<script src="<?php echo BASE_URL;?>views/js/functionscategoria.js"></script>
 <script>listarcategorias();</script>
 <script>listarproveedores();</script>

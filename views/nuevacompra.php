@@ -83,6 +83,6 @@
         justify-content: space-between;
     }
 </style>
-<script src="<?php BASE_URL?>views/js/functionscompra.js"></script>
+<script src="<?php echo BASE_URL;?>views/js/functionscompra.js"></script>
 <script>listar_productos();</script>
 <script>listar_trabajadores();</script>
