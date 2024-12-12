@@ -16,33 +16,35 @@ class CategoriaModel
         $respuesta = $this->conexion->query(" SELECT * FROM categoria");
         while ($objeto = $respuesta->fetch_object()) {
             array_push($arrRespuesta, $objeto);
-            
         }
         return $arrRespuesta;
     }
 
-    public function registrarCategoria($nombre, $detalle,){
+    public function registrarCategoria($nombre, $detalle)
+    {
         $sql = $this->conexion->query("CALL insertcategoria('{$nombre}','{$detalle}')");
         $sql = $sql->fetch_object();
         return $sql;
     }
-    public function obtener_categoria_id($id){
+    public function obtener_categoria_id($id)
+    {
         $objeto = $this->conexion->query("SELECT * FROM  categoria where id='{$id}'");
         $objeto = $objeto->fetch_object();
         return $objeto;
     }
-    
+
     ////////////////////////
-    
-    public function verCategoria($id){
+
+    public function verCategoria($id)
+    {
         $sql = $this->conexion->query("SELECT * FROM categoria WHERE id='{$id}'");
         $sql = $sql->fetch_object();
         return $sql;
-     }
-     public function actualizarCategoria($id, $nombre, $detalle){
+    }
+    public function actualizarCategoria($id, $nombre, $detalle)
+    {
         $sql = $this->conexion->query("CALL actualizarcategoria('{$id}','{$nombre}','{$detalle}')");
         $sql = $sql->fetch_object();
         return $sql;
     }
 }
-?>
