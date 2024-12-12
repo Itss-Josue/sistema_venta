@@ -135,21 +135,44 @@ async function actualizar_persona() {
             cache: 'no-cache',
             body: datos
         });
-        json = await respuesta.json();
-        if (json.status) {
-            swal.fire("Actualización exitosa", json.mensaje, 'success');
-        } else {
-            swal.fire("Actualización fallida", json.mensaje, 'error');
+
+        if (!respuesta.ok) {
+            throw new Error(`HTTP error! status: ${respuesta.status}`);
         }
+
+        let json = await respuesta.json();
+
+        if (json.status) {
+            swal.fire({
+                title: "¡Actualización exitosa!",
+                text: json.mensaje,
+                icon: 'success',
+                confirmButtonText: 'Aceptar'
+            });
+        } else {
+            swal.fire({
+                title: "Actualización fallida",
+                text: json.mensaje,
+                icon: 'error',
+                confirmButtonText: 'Intentar de nuevo'
+            });
+        }
+
         console.log(json);
     } catch (e) {
         console.error("Oops, ocurrió un error: " + e);
+        swal.fire({
+            title: "Error inesperado",
+            text: "Ocurrió un error al intentar actualizar. Por favor, intente nuevamente.",
+            icon: 'error',
+            confirmButtonText: 'Cerrar'
+        });
     }
 }
 
 
 async function eliminar_persona(id){
-    swal({
+    swal.fire({
         title: "¿Realmente desea Eliminar el Usuario?",
         text: "",
         icon: "warning",

@@ -72,7 +72,7 @@ class PersonaModel{
         return $sql;
     }
     
-    public function actualizarPersona(
+    public function actualizar_persona(
         $id,
         $nro_identidad,
         $razon_social,
@@ -83,21 +83,18 @@ class PersonaModel{
         $distrito,
         $cod_postal,
         $direccion,
-        $rol,
+        $rol
     ) {
         $sql = $this->conexion->query("CALL actualizarpersona(
             '{$id}', '{$nro_identidad}', '{$razon_social}', '{$telefono}', '{$correo}',
             '{$departamento}', '{$provincia}', '{$distrito}', '{$cod_postal}', '{$direccion}', '{$rol}')");
-
-        if (!$sql) {
-            die("Error en la consulta: " . $this->conexion->error);
-        }
-
-        return $sql;
+            $sql = $sql->fetch_object();
+            return $sql;
     }
-    public function eliminarPersona($id){
+    public function eliminar_persona($id){
         $sql = $this->conexion->query("CALL eliminarpersona('{$id}')");
         $sql = $sql->fetch_object();
         return $sql;
     }
+    
 }

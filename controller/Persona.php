@@ -100,7 +100,7 @@ if ($tipo == "listar") {
     echo json_encode($arr_respuesta);
 }
 
-// RECIEN AGREGADO
+
 
 if ($tipo == "ver_persona") {
     $id_Persona = $_POST['id_persona'];
@@ -112,8 +112,10 @@ if ($tipo == "ver_persona") {
     }
     echo json_encode($response);
 }
+
+
 if ($tipo == "actualizar_persona") {
-    if ($_POST) {
+    
         $id_persona = $_POST['id_persona'];
         $nro_identidad = $_POST['nro_identidad'];
         $razon_social = $_POST['razon_social'];
@@ -132,7 +134,7 @@ if ($tipo == "actualizar_persona") {
             $rol == "") {
             $arr_Respuesta = array('status' => false, 'mensaje' => 'Error, campos vacíos');
         } else {
-            $arrPersona = $objPersona->actualizarPersona(
+            $arrPersona = $objPersona->actualizar_persona(
                 $id_persona,
                 $nro_identidad,
                 $razon_social,
@@ -146,24 +148,20 @@ if ($tipo == "actualizar_persona") {
                 $rol
             );
             if ($arrPersona) {
-                $arr_Respuesta = array(
-                    'status' => true,
-                    'mensaje' => 'Actualización Exitosa'
-                );
+                $arr_Respuesta = array('status' => true,'mensaje' => 'Actualización Exitosa');
             } else {
-                $arr_Respuesta = array(
-                    'status' => false,
-                    'mensaje' => 'Error, inténtelo de nuevo'
-                );
+                $arr_Respuesta = array('status' => false,'mensaje' => 'Error, inténtelo de nuevo');
             }
         }
         echo json_encode($arr_Respuesta);
-    }
+    
 }
+
+
 
 if ($tipo == "eliminar") {
         $id_persona = $_POST['id_persona'];
-        $arrPersona = $objPersona->eliminarPersona($id_persona);
+        $arrPersona = $objPersona->eliminar_persona($id_persona);
 
         if (empty($arr_Respuesta)) {
             $response = array('status' => false);
