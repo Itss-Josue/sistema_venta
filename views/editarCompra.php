@@ -1,12 +1,12 @@
 
 
 <div style="margin-top:5%; width: 30%;" class="container">
-    <h1>Registrar Compras</h1>
+    <h1>Editar Compras</h1>
 
     <form action="" id="formRegistrarCompras">
         <label for="id_producto">Producto:</label>
         <select name="id_producto" id="id_producto" required>
-            <option value="" disabled selected>Seleccione</option>
+            <option value="" disabled selected>Seleccione un producto</option>
         </select>
 
         <label for="cantidad">Cantidad:</label>
@@ -15,9 +15,9 @@
         <label for="precio">Precio:</label>
         <input type="number" name="precio" id="precio" placeholder="Ingrese el precio" required>
 
-        <label for="id_trabajador">Trabajador:</label>
+        <label for="trabajador">Trabajador:</label>
         <select name="trabajador" id="trabajador" required>
-            <option value="" disabled selected>Seleccione</option>
+            <option value="" disabled selected>Seleccione un trabajador</option>
         </select>
 <br>
 <br>
@@ -71,7 +71,7 @@
     }
 
     .btn {
-        width: 40%;
+        width: 20%;
         padding: 6px;
         font-size: 0.8rem;
         border-radius: 5px;

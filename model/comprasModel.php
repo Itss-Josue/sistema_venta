@@ -34,4 +34,20 @@ class ComprasModel
         }
         return $arrRespuesta;
     }
+    
+    public function verCompras($id){
+        $sql = $this->conexion->query("SELECT * FROM compras WHERE id='{$id}'");
+        $sql = $sql->fetch_object();
+        return $sql;
+     }
+     public function actualizarcompras($id, $id_producto, $cantidad, $precio, $id_trabajador){
+        $sql = $this->conexion->query("CALL actualizarCompras('{$id}','{$id_producto }','{$cantidad}','{$precio}','{$id_trabajador}')");
+        $sql = $sql->fetch_object();
+        return $sql;
+    }
+    public function eliminarcompras($id){
+        $sql = $this->conexion->query("CALL eliminarCompras('{$id}')");
+        $sql = $sql->fetch_object();
+        return $sql;
+    }
 }

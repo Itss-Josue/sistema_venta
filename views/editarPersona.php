@@ -80,10 +80,12 @@
         </form>
     </div>
 </div>
+
+
+<script src="<?php echo BASE_URL?>views/js/functionspersona.js"></script>
+
 <script>
     const id_p = <?php $pagina = explode("/", $_GET['views']);
                     echo $pagina['1']; ?>;
     ver_persona(id_p);
 </script>
-
-<script src="<?php echo BASE_URL?>views/js/functionspersona.js"></script>

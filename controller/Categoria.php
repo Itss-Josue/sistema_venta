@@ -78,7 +78,7 @@ if ($tipo == "actualizar") {
         $arr_Respuesta = array('status' => false, 'mensaje' => 'Error, campos vacios'); //respuesta
 
     } else {
-        $arrCategoria = $objCategoria->actualizarCategoria($id_categoria, $nombre, $detalle);
+        $arrCategoria = $objCategoria->actualizarcategoria($id_categoria, $nombre, $detalle);
         if ($arrCategoria->p_id > 0) {
             $arr_Respuesta = array('status' => true, 'mensaje' => 'Actualizado Correctamente');
 

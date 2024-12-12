@@ -92,7 +92,7 @@ async function listar_productos() {
 // Listar proveedores
 async function listar_trabajadores() {
     try {
-        let respuesta = await fetch(base_url+'controller/Persona.php?tipo=listar_trabajador');
+        let respuesta = await fetch(base_url+'controller/Persona.php?tipo=listarTrabajadores');
         json = await respuesta.json();
         if (json.status) {
             let datos = json.contenido;
@@ -105,7 +105,94 @@ async function listar_trabajadores() {
         }
 
         console.log(respuesta);
-    } catch (e) {
-        console.log("Error al cargar trabajador " + e);
+    } catch (error) {
+        console.log("Error al cargar trabajador " + error);
     }
+}
+
+
+async function ver_compra(id) {
+    const formData = new FormData();
+    formData.append('id_compra', id); 
+    try {
+        let respuesta = await fetch(base_url+'controller/Compra.php?tipo=ver', {
+            method: 'POST',
+            mode: 'cors',
+            cache: 'no-cache',
+            body: formData
+        });
+        json = await respuesta.json();
+        if (json.status) {
+            document.querySelector('#id_compra').value = json.contenido.id;
+            document.querySelector('#id_producto').value = json.contenido.id_producto;
+            document.querySelector('#cantidad').value = json.contenido.cantidad;
+            document.querySelector('#precio').value = json.contenido.precio;
+            document.querySelector('#id_trabajador').value = json.contenido.id_trabajador;
+        }else{
+            window.location = base_url+"compra";
+        }
+        console.log(json);
+    } catch (error) {
+        console.log("oops ocurrio un error al editar compra"+error);
+    }
+}
+
+async function actualizarcompras() {
+    const datos = new FormData(formRegistrarCompras);
+    try {
+        let respuesta = await fetch(base_url + 'controller/Compra.php?tipo=actualizar', {
+            method: 'POST',
+            mode: 'cors',
+            cache: 'no-cache',
+            body: datos
+        });
+        json = await respuesta.json();
+        if(json.status){
+            swal("Registro", json.mensaje, "success");
+        }else{
+            swal("Registro", json.mensaje, "error");
+        }
+        console.log(json);
+    } catch (e) {
+        console.log("Oops, ocurrio un error compras"+e);
+    }
+}
+
+async function eliminarcompras(id) {
+    swal ({
+        title: "¿Realmente desea eliminar la compra?",
+        text: "",
+        icon: "warning",
+        buttons: true,
+        dangerMode: true
+    }).then((willDelete)=>{
+        if (willDelete) {
+            fnt_eliminar(id);
+
+        }
+    })
+}
+
+async function fnt_eliminar(id) {
+    const formData = new FormData();
+    formData.append('id_compra',
+        id);
+        try {
+            let respuesta = await fetch(base_url + 'controller/Compra.php?tipo=eliminar',{
+                 method: 'POST',
+                 mode: 'cors',
+                 cache: 'no-cache',
+                 body: formData
+        
+            });
+            json = await respuesta.json();
+            if (json.status) {
+                swal("Eliminar", "eliminado correctamente", "success");
+                document.querySelector('#fila'+id).remove();
+            }else{
+                swal('Eliminar', 'Error al eliminar compra', 'warning');
+            }
+        } catch (e) {
+            console.log("ocurrio un error" + e);
+        }
 }

@@ -29,7 +29,8 @@ if ($tipo == "listar") {
             $r_trabajador = $objPersona->obtener_trabajador_id($id_trabajador);
             $arrCompras[$i]->trabajador=$r_trabajador;
 
-            $opciones = '';
+            $opciones = '<a class="btn btn-primary btn-sm" href=" ' . BASE_URL . 'editarCompra/' . $id_compra . '">Editar<i class="fas fa-edit"></i></a>
+                    <button class="btn btn-danger btn-sm" onclick="eliminar_compra('.  $id_compra .');"<i class="fas fa-trash-alt"></i>Eliminar</button>';
             $arrCompras[$i]->options = $opciones;
             
         }
@@ -38,7 +39,6 @@ if ($tipo == "listar") {
     }
     echo json_encode($arr_Respuesta); //convertir en formato -- 
 }
-
 if ($tipo == "registrar") {
     if ($_POST) {
         $id_producto = $_POST['id_producto'];
@@ -59,6 +59,56 @@ if ($tipo == "registrar") {
             echo json_encode($arr_Respuesta);
 
 }
+}
+
+
+if($tipo == "ver") {
+    //print_r($_POST);
+    $id_compra = $_POST['id_compra'];
+    $arr_Respuesta = $objCompras->verCompras($id_compra);
+   // print_r($arr_Respuesta);
+   if (empty($arr_Respuesta)) {
+       $response = array('status' => false, 'mensaje' => "ErroR¡¡ no hay informacion");
+   }else{
+    $response = array('status' => true, 'mensaje'=>"datos encontrados", 'contenido' => $arr_Respuesta);
+   }
+   echo json_encode($response);
+}
+
+if ($tipo == "actualizar") {
+    // Obtener los datos del formulario
+    $id_compra = $_POST['id_compra'];
+    $id_producto = $_POST['id_producto'];
+    $cantidad = $_POST['cantidad'];
+    $precio = $_POST['precio'];
+    $id_trabajador = $_POST['id_trabajador'];
+
+    if ($id_compra == "" || $id_producto == "" || $cantidad == "" || $precio == "" || $id_trabajador == "") {
+        $arr_Respuesta = array('status' => false, 'mensaje' => 'Error, campos vacios'); //respuesta
+
+    } else {
+        $arrCompras = $objCompras->actualizarcompras($id_compra, $id_producto, $cantidad, $precio, $id_trabajador);
+        if ($arrCompras->p_id > 0) {
+            $arr_Respuesta = array('status' => true, 'mensaje' => 'Actualizado Correctamente');
+
+        } else {
+            $arr_Respuesta = array('status' => false, 'mensaje' => 'Error al actualizar compras');
+        }
+    }
+    echo json_encode($arr_Respuesta);
+}
+
+if ($tipo == "eliminar") {
+    //print_r($_POST);
+    $id_compra = $_POST['id_compra'];
+    $arr_Respuesta = $objCompras->eliminarcompras($id_compra);
+    //print_r($arr_Respuesta);
+    if (empty($arr_Respuesta)) {
+        $response = array('status' => false);
+    } else {
+        $response = array('status' => true);
+    }
+    echo json_encode($response);
 }
 
 ?>

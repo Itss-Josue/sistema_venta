@@ -88,7 +88,7 @@ if ($tipo == "listar") {
     if (!empty($arr_proveedor)) {
 
         for ($i = 0; $i < count($arr_proveedor); $i++) {
-            $rol_persona = $arr_proveedor[$i]->rol;
+            $rol_persona = $arr_proveedor[$i]->id;
             $categoria = $arr_proveedor[$i]->razon_social;
             $opciones = '';
             $arr_proveedor[$i]->options = $opciones;

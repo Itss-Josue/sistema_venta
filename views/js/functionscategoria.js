@@ -62,8 +62,6 @@ if (document.querySelector('#tbl_categoria')) {
     listar_categorias();
 }
 
-
-
 async function ver_categoria(id) {
     const formData = new FormData();
     formData.append('id_categoria', id); 
@@ -88,7 +86,7 @@ async function ver_categoria(id) {
     }
 }
 
-async function actualizarCategoria() {
+async function actualizarcategoria() {
     const datos = new FormData(formActualizarCat);
     try {
         let respuesta = await fetch(base_url + 'controller/Categoria.php?tipo=actualizar', {
