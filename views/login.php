@@ -17,7 +17,7 @@
             <label for="password">Contraseña</label>
             <input type="password" id="password" name="password" required>
         </div>
-        <button type="submit" class="login-button">Ingresar</button>
+        <button  type="submit" class="login-button">Ingresar</button>
     </form>
 </div>
 <style>
@@ -31,7 +31,6 @@ body {
     height: 100vh;
     margin: 0;
 }
-
 /* Estilo para el contenedor de login */
 .login-container {
     background-color: #ffffff;

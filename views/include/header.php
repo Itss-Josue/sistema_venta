@@ -160,13 +160,13 @@ body {
                 <img src="./views/plantilla/img/peru.jpeg" alt="Perú" class="flag">
                 <span class="location-text">ES / PEN</span>
             </div>
-            <a href="<?php echo BASE_URL ?>perfil" class="user-link">¡Hola, Josue!</a>
+            <a href="<?php BASE_URL ?>perfil" class="user-link">¡Hola, Josue!</a>
             <a href="carrito" class="cart-link">
                 <i class="bi bi-cart"></i>
             </a>
             <a onclick="cerrar_sesion();" class="logout-link">Cerrar sesión</a>
         </div>
-        <a href="<?php echo BASE_URL ?>PanelAdministrador" class="admin-link">
+        <a href="<?php BASE_URL ?>PanelAdministrador" class="admin-link">
             <i class="bi bi-arrow-left-circle"></i> Panel de Administrador
         </a>
     </div>
