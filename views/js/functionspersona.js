@@ -74,11 +74,12 @@ async function registrarUsuario() {
         });
 
         // Procesar la respuesta JSON
-        let json = await respuesta.json();
+         json = await respuesta.json();
         if (json.status) {
-            swal("Registro", json.mensaje, "success");
+            swal.fire("Registro", json.mensaje, "success");
+
         } else {
-            swal("Registro", json.mensaje, "error");
+            swal.fire("Registro", json.mensaje, "error");
         }
 
         console.log(json);

@@ -13,14 +13,13 @@ class ProductoModel
     public function obtenerProductos(){
         
         $arrRespuesta = array();
-        $respuesta = $this->conexion->query(" SELECT * FROM producto");
+        $respuesta = $this->conexion->query("SELECT * FROM producto");
         while ($objeto = $respuesta->fetch_object()) {
             array_push($arrRespuesta, $objeto);
             
         }
         return $arrRespuesta;
     }
-    
     public function obtener_producto_id($id){
         $respuesta = $this->conexion->query("SELECT * FROM producto WHERE id='{$id}'");
         $objeto = $respuesta->fetch_object();
